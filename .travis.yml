@@ -6,18 +6,22 @@ python:
 env:
   -DJANGO=1.7 DB=mysql
   -DJANGO=1.7 DB=sqlite3
-  -MICROSITEDBNAME=test
-  -MICROSITEDBUSER=root
-  -MICROSITEDBPASS=root
-  -SGUSER=mp
-  -SGPWD=mp
+  -MICROSITEDBNAME = test
+  -MICROSITEDBUSER = root
+  -MICROSITEDBPASS = root
+  -SGUSER = mp
+  -SGPWD = mp
 # command to install dependencies
 before_install:
   - mysql -e "create database IF NOT EXISTS test;" -u root
 
+
 install:
   - pip install -r requirements.txt
   - pip install coveralls
+
+before_script:
+  - mysql -e 'create database test;'
 
 # command to run tests
 script:
