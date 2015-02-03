@@ -6,7 +6,7 @@ python:
 env:
   -DJANGO=1.7 DB=mysql
   -DJANGO=1.7 DB=sqlite3
-  -MICROSITEDBNAME = myapp_test
+  -MICROSITEDBNAME = microsite
   -MICROSITEDBUSER = root
   -MICROSITEDBPASS = root
   -SGUSER = mp
@@ -21,7 +21,7 @@ install:
   - pip install coveralls
 
 before_script:
-  - mysql -e 'create database myapp_test;'
+  - mysql -e 'create database microsite;'
 
 # command to run tests
 script:
