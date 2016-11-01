@@ -50,12 +50,12 @@ build:
           echo "python version $(python --version) running"
           echo "pip version $(pip --version) running"
           
-    - deploy:
-          steps:
-            - internal/docker-push:
-                username: nikhilamergu
-                password: nikhila05@
-                repository: nikhilamergu/test-project
-                ports: "3000"
-                working-dir: $WERCKER_ROOT/backend/
-                cmd: npm start
+deploy:
+  steps:
+    - internal/docker-push:
+        username: nikhilamergu
+        password: nikhila05@
+        repository: nikhilamergu/test-project
+        ports: "3000"
+        working-dir: $WERCKER_ROOT/backend/
+        cmd: npm start
