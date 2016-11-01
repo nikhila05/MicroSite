@@ -1,3 +1,10 @@
 machine:
   python:
     version: 2.7.5
+  services:
+    - redis
+  deployment:
+    production:
+      branch: master
+      commands:
+        - fab deploy
