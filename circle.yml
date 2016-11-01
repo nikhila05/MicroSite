@@ -4,6 +4,8 @@ machine:
     - redis
 
 dependencies:
+  pre:
+    - pip install -r requirements.txt
   override:
     - docker info
     - docker build --rm=false -t nikhila05/micro-finance .
