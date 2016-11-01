@@ -1,7 +1,21 @@
 machine:
-  python:
-    version: 2.7.5
   services:
-    - redis
     - docker
-  
+    - redis
+
+dependencies:
+  override:
+    - docker info
+    - docker build --rm=false -t circleci/elasticsearch .
+
+test:
+  override:
+    - docker run -d -p 9200:9200 circleci/elasticsearch; sleep 10
+    - curl --retry 10 --retry-delay 5 -v http://localhost:9200
+
+deployment:
+  hub:
+    branch: master
+    commands:
+      - docker login -e nikhila@micropyramid.com -u nikhilamergu -p nikhila05@
+      - docker push nikhila05/microsite
