@@ -6,7 +6,7 @@ machine:
 dependencies:
   override:
     - docker info
-    - docker build --rm=false -t nikhila05/microsite .
+    - docker build --rm=false -t nikhila05/micro-finance .
 
 test:
   override:
@@ -18,4 +18,4 @@ deployment:
     branch: master
     commands:
       - docker login -e nikhila@micropyramid.com -u nikhilamergu -p nikhila05@
-      - docker push nikhila05/microsite
+      - docker push nikhila05/micro-finance
