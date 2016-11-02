@@ -4,7 +4,7 @@
 #
  
 # Pull base image.
-FROM ubuntu:trusty
+FROM ubuntu:14.04
  
 # Install ElasticSearch.
 RUN apt-get update \
