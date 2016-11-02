@@ -7,9 +7,6 @@
 FROM ubuntu:14.04
  
 # Install ElasticSearch.
-RUN apt-get update \
- && apt-get upgrade -y
-
 RUN \
   cd /tmp && \
   wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.2.1.tar.gz && \
