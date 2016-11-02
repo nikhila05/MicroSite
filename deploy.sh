@@ -42,7 +42,7 @@ make_task_def(){
 	task_template='[
 		{
 			"name": "microsite",
-			"image": "%s.dkr.ecr.us-east-1.amazonaws.com/microsite:%s",
+			"image": "%s.dkr.ecr.us-east-1.amazonaws.com/sample-test-project:%s",
 			"essential": true,
 			"memory": 200,
 			"cpu": 10,
@@ -60,7 +60,7 @@ make_task_def(){
 
 push_ecr_image(){
 	eval $(aws ecr get-login --region us-east-1)
-	docker push $AWS_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/microsite:$CIRCLE_SHA1
+	docker push $AWS_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/sample-test-project:$CIRCLE_SHA1
 }
 
 register_definition() {
