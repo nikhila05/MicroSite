@@ -20,4 +20,3 @@ deployment:
     commands:
       - docker login -e nikhila@micropyramid.com -u nikhilamergu -p nikhila05@
       - docker push nikhilamergu/micro-finance
-      - sh ./deploy.sh
