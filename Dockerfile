@@ -4,9 +4,14 @@
 #
  
 # Pull base image.
-FROM java:8
+FROM ubuntu:trusty
  
 # Install ElasticSearch.
+RUN apt-get update \
+ && apt-get upgrade -y \
+ && apt-get install -y
+RUN apt-get install -y apt-utils
+
 RUN \
   cd /tmp && \
   wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.2.1.tar.gz && \
@@ -28,3 +33,5 @@ CMD ["/elasticsearch/bin/elasticsearch"]
 #   - 9300: transport
 EXPOSE 9200
 EXPOSE 9300
+EXPOSE 8000
+EXPOSE 8080
