@@ -5730,8 +5730,15 @@ p a{
     }
     .technologies_grid{
       padding:35px 0;
+      text-align: center;
       img{
         max-width: 100%;
+      }
+       [class*='col-']{
+        display: inline-block;
+        vertical-align: top;
+        letter-spacing: 0;
+        float: none;
       }
     }
 }
@@ -5846,17 +5853,17 @@ p a{
       margin-left: -15px;
       margin-right: -15px;
       .helping_item{
-        background: #45ad70;
+        background: #333;
         padding:15px;
         color: #fff;
-        font-size: 23px;
+        font-size: 21px;
         line-height: 30px;
         font-weight: 500;
         &.second{
-          background: #d8344a;
+          background: #e0393e;
         }
         &.third{
-          background: #13323c;
+          background: #f79420;
         }
       }
      }
@@ -5868,10 +5875,10 @@ p a{
   margin-bottom: 40px;
   font-family: 'Quicksand', sans-serif;
   .contact_block{
-    padding:30px;
-     background: url(../images/contact-sales-female.png) no-repeat top left #2f5374;
-     background-size: contain;
-     background-position-x: -75px;
+       padding: 30px;
+    background: url(/static/site/images/contact_person.png?eb824a871214) no-repeat top left #2f5374;
+    background-position-x: 3px;
+    background-size: 16%;
      .contact_details{
       padding-left: 175px;
       color: #fff;
@@ -5879,12 +5886,12 @@ p a{
       font-size: 20px;
       a{
         display: inline-block;
-        background: #fff;
+        background: #d8344a;
         font-size: 16px;
         font-weight: 600;
         padding: 8px 30px;
         margin-top: 18px;
-        color: #2f5374;
+        color: #fff;
       }
       strong{
         display: block;
@@ -5928,6 +5935,56 @@ p a{
   }
 }
 /* contact_container ends here */
+/* open_source_projects starts here */
+.open_source_projects{
+  font-family: 'Quicksand', sans-serif;
+  margin:35px 0;
+  text-align: center;
+  .heading{
+      display: block;
+      text-align: center; 
+     span{
+      font-weight: 400;
+      font-size: 24px;
+      display: inline-block;
+      position: relative;
+      padding-bottom: 20px;
+       &:after{
+        content:"";
+        position: absolute;
+        width: 60px;
+        height: 2px;
+        background: #1dabdd;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+  .open_source_item{
+    margin-top:25px;
+    padding:0 0px;
+    text-align: left;
+    strong{
+      font-weight: 500;
+      font-size: 17px;
+    }
+    p{
+      font-size: 15px;
+      line-height: 25px;
+      font-weight: 400;
+      margin-top: 15px;
+      color: #333;
+    }
+  }
+  [class*='col-']{
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: 0;
+    float: none;
+    width:24%;
+  }
+}
+/* open_source_projects ends here */
 /* recent_blogs starts here */
 .recent_blogs{
   margin-bottom: 30px;
@@ -5936,22 +5993,22 @@ p a{
     display: block;
     text-align: center; 
      span{
-        font-weight: 400;
-        font-size: 24px;
-        display: inline-block;
-        position: relative;
-        padding-bottom: 20px;
-         &:after{
-          content:"";
-          position: absolute;
-          width: 60px;
-          height: 2px;
-          background: #1dabdd;
-          left: 0;
-          bottom: 0;
-        }
+      font-weight: 400;
+      font-size: 24px;
+      display: inline-block;
+      position: relative;
+      padding-bottom: 20px;
+       &:after{
+        content:"";
+        position: absolute;
+        width: 60px;
+        height: 2px;
+        background: #1dabdd;
+        left: 0;
+        bottom: 0;
       }
-   }
+    }
+  }
    .recent_blog{
       margin-top: 20px;
       strong{
