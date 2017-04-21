@@ -5641,6 +5641,9 @@ p a{
 .service_banner{
   margin-top:65px;
   font-family: 'Quicksand', sans-serif;
+  @media(min-width: $mob_min) and (max-width: $tab_max){
+    margin-top:0;
+  }
   p{
     font-size: 34px;
     font-weight: 300;
@@ -5648,6 +5651,9 @@ p a{
     line-height: 50px;
     padding-top: 50px;
     color: #444;
+     @media(min-width: $tab_min) and (max-width: $tab_max){
+        padding-top:20px;
+     }
   }
   .content{
      margin-top: 0px;
@@ -5666,8 +5672,14 @@ p a{
 .service_qualities{
   font-family: 'Quicksand', sans-serif;
   margin-top: 50px;
+  @media(min-width: $mob_min) and (max-width: $mob_max){
+    margin-top:20px;
+  }
   .service_quality{
     padding:25px;
+    @media(min-width: $mob_min) and (max-width: $mob_max){
+      padding:15px;
+    }
     .icon{
       i{
         font-weight: 300;
@@ -5683,6 +5695,9 @@ p a{
       padding-bottom: 20px;
       display: block;
       position: relative;
+      @media(min-width: $mob_min) and (max-width: $tab_max){
+        font-size:18px;
+      }
       &:after{
         content:"";
         position: absolute;
@@ -5707,6 +5722,9 @@ p a{
 .service_advantages{
     font-family: 'Quicksand', sans-serif;
     margin-top: 70px;
+    @media(min-width: $mob_min) and (max-width: $mob_max){
+      margin-top:20px;
+    }
     .heading{
       display: block;
       text-align: center; 
@@ -5716,6 +5734,10 @@ p a{
           display: inline-block;
           position: relative;
           padding-bottom: 20px;
+          @media(min-width: $mob_min) and (max-width: $mob_max){
+            font-size:18px;
+            font-weight: 500;
+          }
            &:after{
             content:"";
             position: absolute;
@@ -5739,6 +5761,12 @@ p a{
         vertical-align: top;
         letter-spacing: 0;
         float: none;
+        @media(min-width: $mob_min) and (max-width: $tab_max){
+          float:left;
+        }
+      }
+      .skill{
+        margin-bottom:8px;
       }
     }
 }
@@ -5752,8 +5780,14 @@ p a{
         font-size: 16px;
         margin-top: 15px;
         text-transform: uppercase;
+         @media(min-width: $mob_min) and (max-width: $mob_max){
+            font-size:14px;
+          }
         b{
           font-size: 30px;
+           @media(min-width: $mob_min) and (max-width: $mob_max){
+            font-size:20px;
+          }
         }
       }
      .heading{
@@ -5765,6 +5799,10 @@ p a{
           display: inline-block;
           position: relative;
           padding-bottom: 20px;
+           @media(min-width: $mob_min) and (max-width: $mob_max){
+            font-size:18px;
+            font-weight: 500;
+          }
            &:after{
             content:"";
             position: absolute;
@@ -5791,6 +5829,13 @@ p a{
           width: 25%;
           transition: background-color 2s ease;
           position: relative;
+          @media(min-width: $mob_min) and (max-width: $mob_max){
+            width:100%;
+            display: block;
+            float: left;
+            position: relative;
+            padding-top: 17%;
+          }
           img{
             max-width: 100%;
             transition:1s all ease;
@@ -5817,6 +5862,11 @@ p a{
               line-height: 27px;
               text-align: left;
               display: block;
+               @media(min-width: $tab_min) and (max-width: $tab_max){
+                  font-size:12px;
+                  font-weight:400;
+                  line-height: 21px;
+               }
             }
           }
         }
@@ -5837,6 +5887,10 @@ p a{
           display: inline-block;
           position: relative;
           padding-bottom: 20px;
+           @media(min-width: $mob_min) and (max-width: $mob_max){
+            font-size:18px;
+            font-weight: 500;
+          }
            &:after{
             content:"";
             position: absolute;
@@ -5879,11 +5933,18 @@ p a{
     background: url(/static/site/images/contact_person.png?eb824a871214) no-repeat top left #2f5374;
     background-position-x: 3px;
     background-size: 16%;
+    @media(min-width: $mob_min) and (max-width: $mob_max){
+      background-position-y: 30px;
+    }
      .contact_details{
       padding-left: 175px;
       color: #fff;
       padding-top: 20px;
       font-size: 20px;
+      @media(min-width: $mob_min) and (max-width: $mob_max){
+        padding-left:30px;
+        padding-top:0;  
+      }
       a{
         display: inline-block;
         background: #d8344a;
@@ -5917,6 +5978,10 @@ p a{
      }
     .contact_content{
       text-align: right;
+      @media(min-width: $mob_min) and (max-width: $tab_max){
+        text-align:left;
+        margin-top: 30px;
+      }
       strong{
         font-size: 22px;
         line-height: 26px;
@@ -5964,6 +6029,9 @@ p a{
     margin-top:25px;
     padding:0 0px;
     text-align: left;
+    @media(min-width: $mob_min) and (max-width: $mob_max){
+      margin-top: 5px;
+    }
     strong{
       font-weight: 500;
       font-size: 17px;
@@ -5982,6 +6050,18 @@ p a{
     letter-spacing: 0;
     float: none;
     width:24%;
+     @media(min-width: $mob_min) and (max-width: $mob_max){
+       float:left;
+       width: 100%;
+       padding:10px 15px;
+       border-bottom: 1px solid #eee;
+      }
+      @media(min-width: $tab_min) and (max-width: $tab_max){
+        width:50%;
+        padding:10px 15px;
+        border-bottom: 1px solid #eee;
+        float: left;
+      }
   }
 }
 /* open_source_projects ends here */
@@ -6029,7 +6109,15 @@ p a{
       color:black;
       .blog_item{
         border-right:1px solid #ddd;
-        p{
+        @media(min-width: $mob_min) and (max-width: $tab_max){
+          border:none;
+          padding:12px 0;
+          border-bottom:1px solid #ddd;
+        }
+        @media(min-width: $tab_min) and (max-width: $tab_max){
+          padding:12px 25px;
+        }
+         p{
           font-size: 16px;
           font-weight: 400;
           line-height: 24px;
@@ -6043,15 +6131,31 @@ p a{
 }
 .carousel-control.left{
   background: none;
+  @media(min-width: $mob_min) and (max-width: $tab_max){
+      left:-30px;
+    }
+    @media(min-width: $tab_min) and (max-width: $tab_max){
+        left:-45px;
+    }
 }
 .carousel-control.right{
   background: none;
+    @media(min-width: $mob_min) and (max-width: $tab_max){
+      right:-20px;
+    }
 }
 .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
     margin-right: -100px;
     background: #4c4c4c;
     font-size: 15px;
     padding-top: 8px;
+    @media(min-width: $mob_min) and (max-width: $tab_max){
+      margin-right:0;
+          padding-top: 6px;
+    width: 20px;
+    height: 25px;
+
+    }
 }
 
 .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev{
@@ -6059,6 +6163,13 @@ p a{
     background: #4c4c4c;
     font-size: 15px;
     padding-top: 8px;
+     @media(min-width: $mob_min) and (max-width: $tab_max){
+      margin-left:0;
+          padding-top: 6px;
+    width: 20px;
+    height: 25px;
+
+    }
 }
 
 
