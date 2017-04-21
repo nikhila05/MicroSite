@@ -5649,7 +5649,7 @@ p a{
     font-weight: 300;
     text-align: center;
     line-height: 50px;
-    padding-top: 50px;
+    padding-top: 0px;
     color: #444;
      @media(min-width: $tab_min) and (max-width: $tab_max){
         padding-top:20px;
@@ -5945,6 +5945,10 @@ p a{
         padding-left:30px;
         padding-top:0;  
       }
+      @media(min-width: $tab_min) and (max-width: $tab_max){
+        padding-left: 70px;
+        padding-top:0;
+      }
       a{
         display: inline-block;
         background: #d8344a;
@@ -5981,6 +5985,9 @@ p a{
       @media(min-width: $mob_min) and (max-width: $tab_max){
         text-align:left;
         margin-top: 30px;
+      }
+       @media(min-width: $tab_min) and (max-width: $tab_max){
+        padding-left: 70px;
       }
       strong{
         font-size: 22px;
@@ -6035,6 +6042,8 @@ p a{
     strong{
       font-weight: 500;
       font-size: 17px;
+      display: block;
+      margin-bottom: 12px;
     }
     p{
       font-size: 15px;
