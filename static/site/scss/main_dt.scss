@@ -831,6 +831,7 @@ body{
 .inner-footer-social{
   background: none !important;
   padding:0px !important;
+  padding-left:10px !important;
   ul{
     li{
       padding:1px !important;
@@ -4300,6 +4301,7 @@ body{
     &.copy-right{
       color: #d1d1d1;
       margin-right:10px;
+      margin-left: 10px;
     }
     &.sitemap{
       a{
@@ -6322,7 +6324,9 @@ p a{
       .process_container{
         height: 450px;
         position: relative;
-       
+         @media(min-width: $mob_min) and (max-width: $mob_max){
+           height:500px;
+         }
         .img_rel{
           position: absolute;
           top:34%;
