@@ -5666,6 +5666,34 @@ p a{
       color: #444;
      }
   }
+  &.python_service_banner{
+    background: #fff;
+    padding:50px 0;
+     @media(min-width: $tab_min) and (max-width: $tab_max){
+        padding:0px;
+     }
+     @media(min-width: $mob_min) and (max-width: $mob_max){
+        padding-bottom:0px;
+     }
+    .left_content{
+      p{      
+        text-align: left;
+        font-weight: 500;
+        line-height: 33px;
+        font-size: 22px;
+        color: #4d5a6f;
+      }
+    }
+    .right_content{
+      p{
+        text-align: left;
+        font-size: 13px;
+        line-height: 23px;
+        color: #4d5a6f;
+        font-weight: 500;
+      }
+    }
+  }
 }
 /* service_banner ends here */
 /* service_qualities starts here */
@@ -5714,6 +5742,15 @@ p a{
       font-weight: 400;
       margin-top: 15px;
       color: #333;
+    }
+  }
+  &.python_service_qualities{
+    .service_quality{
+      strong{
+        &:after{
+          left:45%;
+        }
+      }
     }
   }
 }
@@ -6182,3 +6219,195 @@ p a{
 }
 
 
+
+/* python_strength_automation starts here */
+.python_strength_automation{
+  margin:50px 0;
+  font-family: 'Quicksand', sans-serif;
+  @media(min-width: $mob_min) and (max-width: $tab_max){
+     margin:15px 0;
+   }
+  .p_s_a_table{
+    width: 100%;
+    display: table;
+    @media(min-width: $mob_min) and (max-width: $tab_max){
+      display:block;
+    }
+    .our_strength{
+      width:30%;
+      display: table-cell;
+      vertical-align: middle;
+      float: none;
+      @media(min-width: $mob_min) and (max-width: $tab_max){
+        display:block;
+        width: 100%;
+        float: left;
+      }
+      strong{
+        font-size: 25px;
+        color: #444;
+        font-weight: 400;
+        padding:16px 0;
+        padding-bottom: 20px;
+        display: block;
+        position: relative;
+        @media(min-width: $mob_min) and (max-width: $tab_max){
+          font-size:18px;
+        }
+        &:after{
+          content:"";
+          position: absolute;
+          width: 60px;
+          height: 2px;
+          background: #1dabdd;
+          left: 0;
+          bottom: 0;
+        }
+      }
+      .count_block{
+        margin-top:25px;
+        .count_item{
+          margin:15px 0;
+          display: block;
+          @media(min-width: $tab_min) and (max-width: $tab_max){
+              width:48%;
+              float: left;
+            }
+          .count{
+            display: inline-block;
+            background: #2f5374;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            color: #fff;
+            font-size: 15px;
+            padding-top: 8px;
+            box-shadow: 0px 3px 10px rgba(0,0,0, 0.1)
+          }
+          .icon{
+            display: inline-block;
+            background: #1dabdd;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+            padding-top: 6px;
+            box-shadow: 0px 3px 10px rgba(0,0,0, 0.1);
+            i{
+              position: relative;
+              top: 3px;
+            }
+          }
+          .name{
+            display: inline-block;
+            margin-left: 15px;
+            font-size: 18px;
+            font-weight: 400;
+            color: #4d5a6f;
+          }
+        }
+      }
+    }
+    .automation_container{
+      width:70%;
+      display: table-cell;
+      float: none;
+      @media(min-width: $mob_min) and (max-width: $tab_max){
+        display:block;
+        width: 100%;
+        float: left;
+        margin-top: 20px;
+      }
+      .process_container{
+        height: 450px;
+        position: relative;
+       
+        .img_rel{
+          position: absolute;
+          top:34%;
+          @media(min-width: $tab_min) and (max-width: $tab_max){
+            left:41%;
+          }
+          @media(min-width: $mob_min) and (max-width: $mob_max){
+            left: 0;
+            height: auto;
+            width:110px;
+          }
+        }
+        .block{
+          position: absolute;
+          width:300px;
+          @media(min-width: $tab_min) and (max-width: $tab_max){
+            width:300px !important;
+          }
+          @media(min-width: $mob_min) and (max-width: $mob_max){
+             width:300px !important;
+             text-align:left;
+             margin:0;
+          }
+          strong{
+            font-size: 16px;
+            color: #444;
+            font-weight: 500;
+            display: block;
+          }
+          p{
+            font-size: 13px;
+            line-height: 22px;
+            font-weight: 400;
+            margin-top: 7px;
+            color: #333;
+            @media(min-width: $mob_min) and (max-width: $mob_max){
+              padding-left:0;
+            }
+          }
+          &.first{
+            top:0px;
+            left: 40%;
+            @media(min-width: $tab_min) and (max-width: $tab_max){
+              left:30%;
+            }
+            @media(min-width: $mob_min) and (max-width: $mob_max){
+              left:30%;
+            }
+          }
+          &.second{
+            left:40%;
+            bottom: 0;
+            @media(min-width: $tab_min) and (max-width: $tab_max){
+              left:30%;
+            }
+            @media(min-width: $mob_min) and (max-width: $mob_max){
+              left:30%;
+              top:120px;
+            }
+          }
+          &.third{
+            left:15%;
+            top:35%;
+            @media(min-width: $tab_min) and (max-width: $tab_max){
+              left:0;
+            }
+            @media(min-width: $mob_min) and (max-width: $mob_max){
+              left:30%;
+              top:240px;
+            }
+          }
+          &.four{
+            right: -5%;
+            top:35%;
+            @media(min-width: $tab_min) and (max-width: $tab_max){
+              right:-2%;
+            }
+            @media(min-width: $mob_min) and (max-width: $mob_max){
+              left:30%;
+              top:360px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* python_strength_automation ends here */
