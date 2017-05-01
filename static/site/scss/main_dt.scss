@@ -1,5 +1,5 @@
 @import 'ref_dt.scss';
-
+html{font-size: 16px;}
 #body{
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
@@ -5671,6 +5671,7 @@ p a{
   &.python_service_banner{
     background: #fff;
     padding:50px 0;
+    font-size: 13px;
      @media(min-width: $tab_min) and (max-width: $tab_max){
         padding:0px;
      }
@@ -5681,16 +5682,16 @@ p a{
       p{      
         text-align: left;
         font-weight: 500;
-        line-height: 33px;
-        font-size: 22px;
+        line-height: 2em;
+        font-size: 1.5em;
         color: #4d5a6f;
       }
     }
     .right_content{
       p{
         text-align: left;
-        font-size: 13px;
-        line-height: 23px;
+        font-size: 1.1em;
+        line-height: 1.7em;
         color: #4d5a6f;
         font-weight: 500;
       }
@@ -5718,7 +5719,7 @@ p a{
       }
     }
     strong{
-      font-size: 25px;
+      font-size: 1.8rem;
       color: #444;
       font-weight: 400;
       padding:16px 0;
@@ -5739,7 +5740,7 @@ p a{
       }
       }
     p{
-      font-size: 15px;
+      font-size: 1rem;
       line-height: 25px;
       font-weight: 400;
       margin-top: 15px;
@@ -5922,7 +5923,7 @@ p a{
       text-align: center; 
        span{
           font-weight: 400;
-          font-size: 24px;
+          font-size: 1.6rem;
           display: inline-block;
           position: relative;
           padding-bottom: 20px;
@@ -5949,8 +5950,8 @@ p a{
         background: #333;
         padding:15px;
         color: #fff;
-        font-size: 21px;
-        line-height: 30px;
+        font-size: 1.5rem;
+        line-height: 1.9rem;
         font-weight: 500;
         &.second{
           background: #e0393e;
@@ -5991,7 +5992,7 @@ p a{
       a{
         display: inline-block;
         background: #d8344a;
-        font-size: 16px;
+        font-size: 1.1rem;
         font-weight: 600;
         padding: 8px 30px;
         margin-top: 18px;
@@ -6003,7 +6004,7 @@ p a{
       }
       .detail{
         margin-top: 10px;
-        font-size: 14px;
+        font-size: 0.9rem;
         font-weight: 400;
         i{
           background: #1dabdd;
@@ -6029,16 +6030,16 @@ p a{
         padding-left: 70px;
       }
       strong{
-        font-size: 22px;
-        line-height: 26px;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
         font-weight: 500;
         display: block;
         margin:15px 0;
         color: #fff;   
       }
       p{
-        font-size: 15px;
-        line-height: 26px;
+        font-size: 0.9rem;
+        line-height: 1.8rem;
         font-weight: 400;
         color: #fff;
       }
@@ -6056,7 +6057,7 @@ p a{
       text-align: center; 
      span{
       font-weight: 400;
-      font-size: 24px;
+      font-size: 1.6rem;
       display: inline-block;
       position: relative;
       padding-bottom: 20px;
@@ -6080,13 +6081,13 @@ p a{
     }
     strong{
       font-weight: 500;
-      font-size: 17px;
+      font-size: 1.1rem;
       display: block;
       margin-bottom: 12px;
     }
     p{
-      font-size: 15px;
-      line-height: 25px;
+      font-size: 0.9rem;
+      line-height: 1.9rem;
       font-weight: 400;
       margin-top: 15px;
       color: #333;
@@ -6122,7 +6123,7 @@ p a{
     text-align: center; 
      span{
       font-weight: 400;
-      font-size: 24px;
+      font-size: 1.6rem;
       display: inline-block;
       position: relative;
       padding-bottom: 20px;
@@ -6140,9 +6141,10 @@ p a{
    .recent_blog{
       margin-top: 20px;
       strong{
-        font-size: 15px;
+        font-size: 1rem;
       }
       p{
+        font-size: 1rem;
         margin-top: 15px;
       }
    }
@@ -6225,6 +6227,7 @@ p a{
 /* python_strength_automation starts here */
 .python_strength_automation{
   margin:50px 0;
+  font-size: 16px;
   font-family: 'Quicksand', sans-serif;
   @media(min-width: $mob_min) and (max-width: $tab_max){
      margin:15px 0;
@@ -6246,7 +6249,7 @@ p a{
         float: left;
       }
       strong{
-        font-size: 25px;
+        font-size: 1.7em;
         color: #444;
         font-weight: 400;
         padding:16px 0;
@@ -6304,7 +6307,7 @@ p a{
           .name{
             display: inline-block;
             margin-left: 15px;
-            font-size: 18px;
+            font-size: 1.15rem;
             font-weight: 400;
             color: #4d5a6f;
           }
@@ -6351,13 +6354,13 @@ p a{
              margin:0;
           }
           strong{
-            font-size: 16px;
+            font-size: 1.1rem;
             color: #444;
             font-weight: 500;
             display: block;
           }
           p{
-            font-size: 13px;
+            font-size: 0.8rem;
             line-height: 22px;
             font-weight: 400;
             margin-top: 7px;
