@@ -18,8 +18,8 @@ body{
   height: 420px;
   width: 100%;
   margin-top: 30px;
-  /*background-color: white;*/
-  background: url(../images/banners_web_dev/mp_banner_bg.jpg) cover;
+  background-color: white;
+  /*background: url(../images/banners_web_dev/mp_banner_bg.jpg) cover;*/
   position: relative;
   @media (min-width: $mob_min) and (max-width: $smob_max){
     min-height: 400px;
@@ -5639,6 +5639,93 @@ p a{
   }
 }
 /* country_list ends here */
+#main li{   
+  line-height: 10px !important;   
+}   
+@media only screen and (max-width: 1024px) {    
+  .breadcrumb {   
+    display: none;    
+  }   
+}   
+@media only screen and (min-width: 1025px) {    
+  .breadcrumb {   
+    margin-bottom: 110px;   
+  }   
+  .breadcrumb::before, .breadcrumb::after {   
+    content: '';    
+    display: table;   
+  }   
+  .breadcrumb::after {    
+    clear: both;    
+  }   
+  .breadcrumb ul {    
+    list-style: none;   
+    padding: 0;   
+    margin: 0;    
+  }   
+  .breadcrumb ul li {   
+    float: left;    
+  }   
+  .breadcrumb ul li a {   
+    color: #fff;    
+    font-size: .85em;   
+    margin-right: 5px;    
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);   
+  }   
+  .breadcrumb ul li a:hover, .breadcrumb ul li a:focus {    
+    text-decoration: underline;   
+    cursor: pointer;    
+  }   
+  .breadcrumb ul li a:after {   
+    content: "\00BB";   
+    margin-left: 5px;   
+    text-decoration: none !important;   
+  }   
+  .breadcrumb ul li:last-child a:after {    
+    display: none;    
+  }   
+}   
+@media only screen and (min-width: 1025px) {    
+  .no-hero .breadcrumb, .short-header .breadcrumb {   
+    margin-bottom: 130px;   
+  }   
+}   
+@media only screen and (min-width: 1025px) {    
+  .articles .breadcrumb ul li a {   
+    color: white;   
+  }   
+  .articles .breadcrumb ul li:last-child a {    
+    color: white;   
+  }   
+}   
+.dark-text .breadcrumb ul li a {    
+  color: #333;    
+  text-shadow: none;    
+}   
+.bread_crums ul  li a, .bread_crums ul  li .a{    
+    display:inline-block;   
+  }   
+  .bread_crums ul  li a span.name, .bread_crums ul  li .a span.name{    
+    height:16px;    
+    padding:5px 15px;   
+    color:#4c4c4c;    
+    font-size:17px;   
+    position:relative;    
+    padding-left:0px;   
+    font-weight: 600;   
+  }   
+  .bread_crums ul  li a span.name:after, .bread_crums ul  li .a span.name:after{    
+    content: "\00BB";   
+    position:absolute;    
+    right:0px;    
+    top:4px;    
+    display: inline-block;    
+    color: #4c4c4c;   
+    font-weight: 600;   
+  }   
+   .bread_crums ul  li:last-child a span.name:after{    
+      display: none;    
+   }
 /* service_banner starts here */
 .service_banner{
   margin-top:65px;
@@ -5969,10 +6056,9 @@ p a{
   margin-bottom: 40px;
   font-family: 'Quicksand', sans-serif;
   .contact_block{
-       padding: 30px;
-    background: url(/static/site/images/contact_person.png?eb824a871214) no-repeat top left #2f5374;
-    background-position-x: 3px;
-    background-size: 16%;
+      padding: 30px;
+      background: url(/static/site/images/contact_person_1.png?eb824a871214) no-repeat top left #2f5374;
+     
     @media(min-width: $mob_min) and (max-width: $mob_max){
       background-position-y: 30px;
     }
@@ -6144,7 +6230,7 @@ p a{
         font-size: 1rem;
       }
       p{
-        font-size: 1rem;
+        font-size: 1rem; 
         margin-top: 15px;
       }
    }
@@ -6221,7 +6307,9 @@ p a{
 
     }
 }
-
+.blog_title{    
+  color: black;   
+}
 
 
 /* python_strength_automation starts here */
