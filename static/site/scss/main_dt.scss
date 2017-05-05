@@ -1,5 +1,9 @@
 @import 'ref_dt.scss';
-html{font-size: 16px;}
+html{font-size: 16px;
+  @media (min-width: 1400px) and (max-width:2000px){
+    font-size:18px;
+  }
+}
 #body{
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
@@ -5795,6 +5799,7 @@ p a{
   }
   .service_quality{
     padding:25px;
+    min-height: 290px;
     @media(min-width: $mob_min) and (max-width: $mob_max){
       padding:15px;
     }
@@ -5828,7 +5833,7 @@ p a{
       }
     p{
       font-size: 1rem;
-      line-height: 25px;
+      line-height: 1.8rem;
       font-weight: 400;
       margin-top: 15px;
       color: #333;
@@ -5843,18 +5848,45 @@ p a{
       }
     }
   }
+  &.testing_service_quality{
+    margin-top: 25px;
+    .service_quality{
+      display: table;
+      .icon{
+        width: 60px;
+        display: table-cell;
+        vertical-align: top;
+      }
+      .content{
+        vertical-align: top;
+        display: table-cell;
+        strong{
+          padding-top: 0;
+          font-size: 1.2rem;
+          font-weight: 500;
+          padding-bottom: 7px;
+          &:after{
+            background:none;
+          }
+        }
+        p{
+          margin-top: 5px;
+        }
+      }
+    }
+  }
 }
 /* service_qualities ends here */
-/* service_advantages starts here */
-.service_advantages{
-    font-family: 'Quicksand', sans-serif;
-    margin-top: 70px;
-    @media(min-width: $mob_min) and (max-width: $mob_max){
-      margin-top:20px;
-    }
-    .heading{
+/* need_testing_container starts here */
+.need_testing_container{
+  /*background: url(/static/site/images/ques_pattern_1.png) repeat #e9f3f7;*/
+  background: #e9f3f7;
+  padding:60px 0;
+  margin:25px 0;
+  .need_testing_block{
+    .testing_left{
+      .heading{
       display: block;
-      text-align: center; 
        span{
           font-weight: 400;
           font-size: 24px;
@@ -5875,7 +5907,70 @@ p a{
             bottom: 0;
           }
         }
-        
+      }
+      ul{
+        margin:0;
+        padding:0;
+        width: 45%;
+        float: left;
+        li{
+          margin-top: 1.5rem;
+          list-style: none;
+          line-height: 1.2rem;
+          font-size: 1rem;
+          @media(min-width: 1400px) and (max-width: 2000px){
+            font-size:1rem;
+            font-weight: 500;
+            line-height: 1.1rem;
+          }
+          &:before{
+            content: "\f124"; /* FontAwesome Unicode */
+            font-family: FontAwesome;
+            display: inline-block;
+            width: 1.6rem; /* same as padding-left set on li */
+            color: #325677;
+          }
+        }
+      }
+    }
+    .testing_right{
+      img{
+        max-width: 97%;
+      }
+    }
+  }
+}
+/* need_testing_container ends here */
+/* service_advantages starts here */
+.service_advantages{
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 70px;
+    @media(min-width: $mob_min) and (max-width: $mob_max){
+      margin-top:20px;
+    }
+    .heading{
+      display: block;
+      text-align: center; 
+      span{
+        font-weight: 400;
+        font-size: 24px;
+        display: inline-block;
+        position: relative;
+        padding-bottom: 20px;
+        @media(min-width: $mob_min) and (max-width: $mob_max){
+          font-size:18px;
+          font-weight: 500;
+        }
+         &:after{
+          content:"";
+          position: absolute;
+          width: 60px;
+          height: 2px;
+          background: #1dabdd;
+          left: 0;
+          bottom: 0;
+        }
+      }
     }
     .technologies_grid{
       padding:35px 0;
@@ -5898,6 +5993,202 @@ p a{
     }
 }
 /* service_advantages ends here */
+/* how_we_do_container starts here */
+.how_we_do_container{
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 70px;
+  @media(min-width: $mob_min) and (max-width: $mob_max){
+    margin-top:20px;
+  }
+  .testing_process_image{
+    margin:20px 0;
+    text-align: center;
+  }
+  .heading{
+    display: block;
+    text-align: center; 
+    span{
+      font-weight: 400;
+      font-size: 24px;
+      display: inline-block;
+      position: relative;
+      padding-bottom: 20px;
+      @media(min-width: $mob_min) and (max-width: $mob_max){
+        font-size:18px;
+        font-weight: 500;
+      }
+       &:after{
+        content:"";
+        position: absolute;
+        width: 60px;
+        height: 2px;
+        background: #1dabdd;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+  .how_we_do_col{
+    margin-top: 10px;
+    text-align: center;
+    .we_do_block{
+      padding:30px 20px;
+      border-radius: 2px;
+      transition: 0.5s ease-in-out all;
+      .icon{
+        i{
+          display: inline-block;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          padding-top: 23px;
+          text-align: center;
+          color: #fff;
+          background: #2f5374;
+          font-size: 3.4rem;
+          transition: 0.5s ease-in-out all;
+          &:hover{
+            background : darken(#25afe0, 10%);
+            color: #fff;
+          }
+        }
+      }
+      p{
+        font-size: 1rem;
+        line-height: 1.8rem;
+        font-weight: 400;
+        margin-top:10px;
+      }
+      strong{
+        margin-top:20px;
+        display: inline-block;
+        font-size: 1.4rem;
+        color: #2f5374;
+        font-weight: 500;
+      }
+      &:hover{
+        .icon{
+          i{
+            background : darken(#25afe0, 10%);
+            color: #fff;
+          }
+        }
+      }
+    }
+  } 
+}
+/* how_we_do_container ends here */
+/* projects_container starts here */
+.projects_container{
+  margin: 0px 0 30px 0;
+  padding:35px 0;
+  .heading{
+    display: block;
+    text-align: center; 
+    span{
+      font-weight: 400;
+      font-size: 24px;
+      display: inline-block;
+      position: relative;
+      padding-bottom: 20px;
+      @media(min-width: $mob_min) and (max-width: $mob_max){
+        font-size:18px;
+        font-weight: 500;
+      }
+       &:after{
+        content:"";
+        position: absolute;
+        width: 60px;
+        height: 2px;
+        background: #1dabdd;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+  ul{
+    margin:0;
+    padding: 0;
+    margin-top: 25px;
+    li{
+      list-style:none;
+      padding: 0 20px;
+      display: inline-block;
+      img{
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        &:hover{
+          -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(0%);
+        }
+      }
+    }
+  }
+}
+/* projects_container ends here */
+/* other_qa_services starts here */
+.other_qa_services{
+  margin: 0px 0 30px 0;
+  background: #f6f6ff;
+  padding:35px 0;
+  .heading{
+    display: block;
+    text-align: center; 
+    span{
+      font-weight: 400;
+      font-size: 24px;
+      display: inline-block;
+      position: relative;
+      padding-bottom: 20px;
+      @media(min-width: $mob_min) and (max-width: $mob_max){
+        font-size:18px;
+        font-weight: 500;
+      }
+       &:after{
+        content:"";
+        position: absolute;
+        width: 60px;
+        height: 2px;
+        background: #1dabdd;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+  ul{
+      margin:0;
+      width: 48%;
+      margin-right: 1%;
+      float: left;
+      padding:0;
+      margin-top:20px;
+      li{
+        margin-top: 0.8rem;
+        list-style: none;
+        line-height: 1.8rem;
+        font-size: 0.9rem;
+        @media(min-width: 1400px) and (max-width: 2000px){
+          font-size:1rem;
+          font-weight: 500;
+          line-height: 1.1rem;
+        }
+        &:before{
+          content: "\f124";
+          font-family: FontAwesome;
+          display: inline-block;
+          width: 27px;
+          height: 27px;
+          color: #ffffff;
+          border-radius: 50%;
+          line-height: 26px;
+          text-align: center;
+          background: #2f5374;
+          margin-right: 10px;
+        }
+      }
+    }
+}
+/* other_qa_services ends here */
 /* our_proud_work starts here */
 .our_proud_work{
   font-family: 'Quicksand', sans-serif;
@@ -6407,7 +6698,7 @@ p a{
           .name{
             display: inline-block;
             margin-left: 15px;
-            font-size: 1.15rem;
+            font-size: 1rem;
             font-weight: 400;
             color: #4d5a6f;
           }
@@ -6445,6 +6736,9 @@ p a{
         .block{
           position: absolute;
           width:300px;
+          @media (min-width: 1400px) and (max-width:2000px){
+            padding:0 !important;
+          }
           @media(min-width: $tab_min) and (max-width: $tab_max){
             width:300px !important;
           }
@@ -6465,6 +6759,10 @@ p a{
             font-weight: 400;
             margin-top: 7px;
             color: #333;
+            @media (min-width: 1400px) and (max-width:2000px){
+              line-height:1.5rem;
+              font-size: 0.9rem;
+            }
             @media(min-width: $mob_min) and (max-width: $mob_max){
               padding-left:0;
             }
