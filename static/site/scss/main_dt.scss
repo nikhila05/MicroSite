@@ -5913,6 +5913,9 @@ p a{
         padding:0;
         width: 45%;
         float: left;
+        @media(min-width: $mob_min) and (max-width: $tab_max){
+          width:100%;
+        }
         li{
           margin-top: 1.5rem;
           list-style: none;
@@ -6003,6 +6006,11 @@ p a{
   .testing_process_image{
     margin:20px 0;
     text-align: center;
+     @media(min-width: $mob_min) and (max-width: $tab_max){
+        img{
+          max-width:100%;
+        }
+     }
   }
   .heading{
     display: block;
@@ -6114,6 +6122,9 @@ p a{
       list-style:none;
       padding: 0 20px;
       display: inline-block;
+       @media(min-width: $mob_min) and (max-width: $tab_max){
+          margin:10px 0;
+       }
       img{
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
         filter: grayscale(100%);
@@ -6162,6 +6173,9 @@ p a{
       float: left;
       padding:0;
       margin-top:20px;
+       @media(min-width: $mob_min) and (max-width: $tab_max){
+          width:100%;
+       }
       li{
         margin-top: 0.8rem;
         list-style: none;
@@ -6352,6 +6366,8 @@ p a{
      
     @media(min-width: $mob_min) and (max-width: $mob_max){
       background-position-y: 30px;
+      background-image: none;
+      background: #2f5374;
     }
      .contact_details{
       padding-left: 175px;
@@ -6359,11 +6375,11 @@ p a{
       padding-top: 20px;
       font-size: 20px;
       @media(min-width: $mob_min) and (max-width: $mob_max){
-        padding-left:30px;
+        padding-left:0px;
         padding-top:0;  
       }
       @media(min-width: $tab_min) and (max-width: $tab_max){
-        padding-left: 70px;
+        padding-left: 100px;
         padding-top:0;
       }
       a{
@@ -6404,7 +6420,7 @@ p a{
         margin-top: 30px;
       }
        @media(min-width: $tab_min) and (max-width: $tab_max){
-        padding-left: 70px;
+        padding-left: 100px;
       }
       strong{
         font-size: 1.5rem;
@@ -6455,6 +6471,9 @@ p a{
   .each_open_source{
     margin-left: -25px;
     margin-right: -25px;
+    @media(min-width: $mob_min) and (max-width: $mob_max){
+      margin:0;
+    }
     .open_source_item{
       margin-top:25px;
       padding:0 0px;
@@ -6495,10 +6514,12 @@ p a{
        text-align:center;
       }
       @media(min-width: $tab_min) and (max-width: $tab_max){
-        width:50%;
-        padding:10px 30px;
+        width: 48%;
+        padding: 10px 30px;
         border-bottom: 1px solid #eee;
         float: left;
+        min-height: 300px;
+        margin: 0 1%;
       }
   }
 }
