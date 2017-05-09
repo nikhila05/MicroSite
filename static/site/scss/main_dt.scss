@@ -5875,6 +5875,22 @@ p a{
       }
     }
   }
+  &.mongo_service_quality{
+    .service_quality{
+      min-height: 320px;
+      border: 5px solid #f1f1f1;
+      margin-bottom: 20px;
+      @media(min-width: $tab_min) and (max-width: $tab_max){
+        min-height:350px;
+      }
+      .content{
+        .icon{
+          margin-bottom: 10px;
+          display: block;
+        }
+      }
+    }
+  }
 }
 /* service_qualities ends here */
 /* need_testing_container starts here */
@@ -6084,6 +6100,17 @@ p a{
       }
     }
   } 
+  &.mongo_business_col{
+      background: #f7f7f7;
+      padding: 40px 0;
+    .how_we_do_col{
+      .we_do_block{
+        strong{
+          font-size: 1rem;
+        }
+      }
+    }
+  }
 }
 /* how_we_do_container ends here */
 /* projects_container starts here */
@@ -6837,3 +6864,130 @@ p a{
   }
 }
 /* python_strength_automation ends here */
+/* django_rest_banner starts here */
+.django_rest_banner{
+
+   font-family: 'Quicksand', sans-serif;
+  background: url(/static/site/images/djnago_banner.jpg) no-repeat ;
+  height: 25rem;
+  margin-top: 4rem;
+  strong{
+    font-size: 5rem;
+    color: #fff;
+    padding-top: 12rem;
+    display: block;
+    text-shadow: 2px 2px 23px rgba(0,0,0,0.5);
+    @media(min-width: $mob_min) and (max-width: $smob_max){
+      line-height: 5rem;
+      padding-top: 8rem;
+    }
+  }
+}
+/* django_rest_banner ends here */
+
+/* expertise_container starts here */
+.expertise_container{
+   font-family: 'Quicksand', sans-serif;
+  margin:30px 0;
+  padding:30px 0;
+   @media(min-width: $mob_min) and (max-width: $tab_max){
+      margin-top:0;
+      padding-top: 0;
+    }
+  .expertise_circles{
+    font-weight: 400;
+    padding-top: 40px;
+    height: 450px;
+      @media(min-width: $mob_min) and (max-width: $smob_max){
+        height:675px;
+      }
+     @media(min-width: $tab_min) and (max-width: $tab_max){
+        padding-left:5%;
+      }
+    .cicrles{
+      position: relative;
+      .circle{
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 75px;
+         @media(min-width: $mob_min) and (max-width: $smob_max){
+           position:static;
+         }
+        strong{
+          font-size: 1rem;
+          font-weight: 500;
+        }
+        ul{
+          margin:0;
+          padding:0;
+          margin-top:20px;
+          li{
+            list-style: none;
+            font-size: 0.9rem;
+            line-height: 1.8rem;
+          }
+        }
+        &.circle_1{
+          background: #dbf2f9;
+        }
+         &.circle_2{
+          background: #c1c1c1;
+          left: 300px;
+           @media(min-width: $mob_min) and (max-width: $smob_max){
+             margin-top:-100px;
+           }
+        }
+      }
+    }
+  }
+  .expertise_content{
+    b{
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+    strong{
+      margin-top: 15px;
+      display: block;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      font-weight: 500;
+    }
+    p{
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      padding-top: 5px;
+      color: #444;
+      margin-top: 10px;
+    }
+    ul{
+      margin:0;
+      padding:0;
+      margin-top: 15px;
+      li{
+        list-style: none;
+        font-size: 1rem;
+        line-height: 2rem;
+        font-weight: 400;
+        margin: 15px 0;
+         &:before{
+          content: "\f124";
+          font-family: FontAwesome;
+          display: inline-block;
+          width: 27px;
+          height: 27px;
+          color: #ffffff;
+          border-radius: 50%;
+          line-height: 26px;
+          text-align: center;
+          background: #2f5374;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+/* expertise_container ends here */
