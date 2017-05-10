@@ -1,244 +1,231 @@
-
 {% extends 'site/base.html' %}
 {% load i18n %}
-
 {% block title %}
-  {% trans '404' %} | {% trans 'Page not found' %} | {{ block.super }}
+{% trans '404' %} | {% trans 'Page not found' %} | {{ block.super }}
 {% endblock %}
-
 {% block stage %}
 <div id="container_wrapper">
-	<!-- service_banner starts here -->
-	<div class="service_banner row marl">
-		<div class="col-md-offset-2 col-md-8 col-md-offset-2">
-			<p>Deliver A Quality Web Application.</p>
-			<div class="content">
-			<p>We at Micro Pyramid believe in presenting the perfect product for you, and for that to happen all our products are rigorously tested during the development phase and also once the development phase is over. During the Quality Assurance (QA) process, our qualified team of testers make sure that the product is free from bugs.</p>
-			</div>
-		</div>
-	</div>	
-	<!-- srvice_banner ends here -->
-	<!-- service_qualities starts here -->
-	<div class="service_qualities testing_service_quality row">
-		<!-- service_quality starts here -->
-		<div class="col-md-4 col-sm-6">
-			<div class="service_quality">
-				<div class="icon"><i class="fa fa-code"></i></div>
-				<div class="content">
-					<strong>Unit Testing</strong>
-					<p>Unit testing takes place in the development process and they are written by the developers to ensure that the code meets its design and behaves as it is intended to. The main goal behind unit testing is to isolate the individual parts of the program.</p>
-				</div>
-			</div>
-		</div>
-		<!-- service_quality ends here -->
-			<!-- service_quality starts here -->
-		<div class="col-md-4 col-sm-6">
-			<div class="service_quality">
-				<div class="icon"><i class="fa fa-wrench"></i></div>
-				<div class="content">
-					<strong>Functional Testing</strong>
-					<p>At Micropyramid we make sure that the system/software undergoes functional testing. Now, this type of testing involves a technique that is used to test the functionality of the system/software and covers up all scenarios including failure paths.</p>
-				</div>
-			</div>
-		</div>
-		<!-- service_quality ends here -->
-			<!-- service_quality starts here -->
-		<div class="col-md-4 col-sm-6">
-			<div class="service_quality">
-				<div class="icon"><i class="fa fa-cog"></i></div>
-				<div class="content">
-					<strong>Automation Testing</strong>
-					<p>Each time that you modify a software code, it has to be tested manually to ensure quality and it becomes laborious and costly. Hence, in order to provide a solution we use selenium to automate the entire testing process.</p>
-				</div>
-			</div>
-		</div>
-		<!-- service_quality ends here -->
-
-				<!-- service_quality starts here -->
-		<div class="col-md-4 col-sm-6">
-			<div class="service_quality">
-				<div class="icon"><i class="fa fa-mobile"></i></div>
-				<div class="content">
-					<strong>Responsive Testing</strong>
-					<p>These days having a website with a responsive design that can be viewed easily across a wide range of devices is a necessity. We test it across top range of iOS, Android and Windows devices that include phones, tablets and phablets.</p>
-				</div>
-			</div>
-		</div>
-		<!-- service_quality ends here -->
-			<!-- service_quality starts here -->
-		<div class="col-md-4 col-sm-6">
-			<div class="service_quality">
-				<div class="icon"><i class="fa fa-tachometer"></i></div>
-				<div class="content">
-					<strong>Performance Testing</strong>
-					<p>Performance testing is to test how fast our application is working according to the requirements and stability under a particular workload. Here we must identify response time of each and every functionality/page.</p>
-				</div>
-			</div>
-		</div>
-		<!-- service_quality ends here -->
-			<!-- service_quality starts here -->
-		<div class="col-md-4 col-sm-6">
-			<div class="service_quality">
-				<div class="icon"><i class="fa fa-shield"></i></div>
-				<div class="content">
-					<strong>Security Testing</strong>
-					<p>Micropyramid offers automated as well as manual security assessment, and code review service to highlight any security vulnerabilities in the system. Our main focus involves identifying high-risk areas that require immediate attention.</p>
-				</div>
-			</div>
-		</div>
-		</div>
-		<!-- service_quality ends here -->
-		</div>
-
-	</div>
-	<!-- service_qualities ends here -->	
-
-	<!-- need_testing_container starts here -->
-	<div class="need_testing_container row marl">
-		<div class="col-md-offset-1 col-md-10 col-md-offset-1 need_testing_block">
-			<div class="row">
-				<div class="col-md-12 col-sm-8 col-xs-12 testing_left">
-					<span class="heading"><span>Why Do We Need Testing?</span></span>
-					<ul>
-						<li>To deliver a bug-free product</li>
-						<li>To ensure that application meets customer requirements</li>
-						<li>To reduce risk of software failure</li>
-						<li>Reduce costs</li>
-					</ul>
-					<ul>
-						<li>To attain customer satisfaction</li>
-						<li>To find defects</li>
-						<li>To improve software performance</li>
-						<li>To deliver high-quality software</li>
-					</ul>
-				</div>
-
-				<!-- <div class="col-md-5 col-sm-8 col-xs-12 testing_right">
-					<img src="/static/site/images/ques_testing_1.png" />
-				</div> -->
-			</div>
-		</div>
-	</div>
-	<!-- need_testing_container ends here -->
-	
-	<!-- how_we_do starts here -->
-		<div class="how_we_do_container row marl">
-			<span class="heading"><span>How We Do</span></span>
-			<div class="col-md-offset-1 col-md-10 col-md-offset-1 how_we_do_col">
-				<div class="row">
-					<!-- we_do_block starts here -->
-						<div class="col-md-4">
-							<div class="we_do_block">
-								<div class="icon"><i class="fa fa-puzzle-piece"></i></div>
-								<strong>Requirements Gathering</strong>
-								<p>Functions of the system we are to conceive, design, implement & operate.</p>
-							</div>
-						</div>
-					<!-- we_do_block ends here -->
-					<!-- we_do_block starts here -->
-						<div class="col-md-4">
-							<div class="we_do_block">
-								<div class="icon"><i class="fa fa-list-alt"></i></div>
-								<strong>Test Plan & Test Cases</strong>
-								<p>Series of simple steps that has to be done to check a particular functionality.</p>
-							</div>
-						</div>
-					<!-- we_do_block ends here -->
-					<!-- we_do_block starts here -->
-						<div class="col-md-4">
-							<div class="we_do_block">
-								<div class="icon"><i class="fa fa-cogs"></i></div>
-								<strong>Resources & Tools</strong>
-								<p>We use different bug tracking tools to log all the defects raised by testers.</p>
-							</div>
-						</div>
-					<!-- we_do_block ends here -->
-				</div>
-			</div>
-			<div class="clearfix"></div>
-			<div class="testing_process_image">
-				<img src="/static/site/images/test-1.png" />
-			</div>
-			
-		</div>
-	<!-- how_we_do ends here -->
-	
-
-	<!-- other_qa_services starts here -->
-	<div class="other_qa_services row marl">
-
-		<span class="heading"><span>Other QA Services we provide</span></span>
-		<div class="col-md-offset-1 col-md-10 col-md-offset-1 need_testing_block">
-			<div class="row">
-		<ul>
-			<li>So, if you have questions about Salesforce products, services, implementation, getting started</li>
-			<li>You don’t learn everything in life by reading a manual.</li>
-			<li>Free Foreign exchange rates</li>
-			<li>The project was initiated by Andrew Paglinawan in 2008 using geometric shapes as a core foundation</li>
-		</ul>
-		<ul>
-			<li>You don’t learn everything in life by reading a manual.</li>
-			<li>Free Foreign exchange rates</li>
-			<li>The project was initiated by Andrew Paglinawan in 2008 using geometric shapes as a core foundation</li>
-		</ul>
-		</div>
-
-		</div> 
-	</div>
-	<!-- other_qa_services ends here -->
+  <!-- service_banner starts here -->
+  <div class="service_banner row marl">
+    <div class="col-md-offset-2 col-md-8 col-md-offset-2">
+      <p>Deliver A Quality Web Application.</p>
+      <div class="content">
+        <p>We at Micro Pyramid believe in presenting the perfect product for you, and for that to happen all our products are rigorously tested during the development phase and also once the development phase is over. During the Quality Assurance (QA) process, our qualified team of testers make sure that the product is free from bugs.</p>
+      </div>
+    </div>
+  </div>
+  <!-- srvice_banner ends here -->
+  <!-- service_qualities starts here -->
+  <div class="service_qualities testing_service_quality row">
+    <!-- service_quality starts here -->
+    <div class="col-md-4 col-sm-6">
+      <div class="service_quality">
+        <div class="icon"><i class="fa fa-code"></i></div>
+        <div class="content">
+          <strong>Unit Testing</strong>
+          <p>Unit testing takes place in the development process and they are written by the developers to ensure that the code meets its design and behaves as it is intended to. The main goal behind unit testing is to isolate the individual parts of the program.</p>
+        </div>
+      </div>
+    </div>
+    <!-- service_quality ends here -->
+    <!-- service_quality starts here -->
+    <div class="col-md-4 col-sm-6">
+      <div class="service_quality">
+        <div class="icon"><i class="fa fa-wrench"></i></div>
+        <div class="content">
+          <strong>Functional Testing</strong>
+          <p>At Micropyramid we make sure that the system/software undergoes functional testing. Now, this type of testing involves a technique that is used to test the functionality of the system/software and covers up all scenarios including failure paths.</p>
+        </div>
+      </div>
+    </div>
+    <!-- service_quality ends here -->
+    <!-- service_quality starts here -->
+    <div class="col-md-4 col-sm-6">
+      <div class="service_quality">
+        <div class="icon"><i class="fa fa-cog"></i></div>
+        <div class="content">
+          <strong>Automation Testing</strong>
+          <p>Each time that you modify a software code, it has to be tested manually to ensure quality and it becomes laborious and costly. Hence, in order to provide a solution we use selenium to automate the entire testing process.</p>
+        </div>
+      </div>
+    </div>
+    <!-- service_quality ends here -->
+    <!-- service_quality starts here -->
+    <div class="col-md-4 col-sm-6">
+      <div class="service_quality">
+        <div class="icon"><i class="fa fa-mobile"></i></div>
+        <div class="content">
+          <strong>Responsive Testing</strong>
+          <p>These days having a website with a responsive design that can be viewed easily across a wide range of devices is a necessity. We test it across top range of iOS, Android and Windows devices that include phones, tablets and phablets.</p>
+        </div>
+      </div>
+    </div>
+    <!-- service_quality ends here -->
+    <!-- service_quality starts here -->
+    <div class="col-md-4 col-sm-6">
+      <div class="service_quality">
+        <div class="icon"><i class="fa fa-tachometer"></i></div>
+        <div class="content">
+          <strong>Performance Testing</strong>
+          <p>Performance testing is to test how fast our application is working according to the requirements and stability under a particular workload. Here we must identify response time of each and every functionality/page.</p>
+        </div>
+      </div>
+    </div>
+    <!-- service_quality ends here -->
+    <!-- service_quality starts here -->
+    <div class="col-md-4 col-sm-6">
+      <div class="service_quality">
+        <div class="icon"><i class="fa fa-shield"></i></div>
+        <div class="content">
+          <strong>Security Testing</strong>
+          <p>Micropyramid offers automated as well as manual security assessment, and code review service to highlight any security vulnerabilities in the system. Our main focus involves identifying high-risk areas that require immediate attention.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- service_quality ends here -->
+</div>
+</div>
+<!-- service_qualities ends here -->	
+<!-- need_testing_container starts here -->
+<div class="need_testing_container row marl">
+  <div class="col-md-offset-1 col-md-10 col-md-offset-1 need_testing_block">
+    <div class="row">
+      <div class="col-md-12 col-sm-8 col-xs-12 testing_left">
+        <span class="heading"><span>Why Do We Need Testing?</span></span>
+        <ul>
+          <li>To deliver a bug-free product</li>
+          <li>To ensure that application meets customer requirements</li>
+          <li>To reduce risk of software failure</li>
+          <li>Reduce costs</li>
+        </ul>
+        <ul>
+          <li>To attain customer satisfaction</li>
+          <li>To find defects</li>
+          <li>To improve software performance</li>
+          <li>To deliver high-quality software</li>
+        </ul>
+      </div>
+      <!-- <div class="col-md-5 col-sm-8 col-xs-12 testing_right">
+        <img src="/static/site/images/ques_testing_1.png" />
+        </div> -->
+    </div>
+  </div>
+</div>
+<!-- need_testing_container ends here -->
+<!-- how_we_do starts here -->
+<div class="how_we_do_container row marl">
+  <span class="heading"><span>How We Do</span></span>
+  <div class="col-md-offset-1 col-md-10 col-md-offset-1 how_we_do_col">
+    <div class="row">
+      <!-- we_do_block starts here -->
+      <div class="col-md-4">
+        <div class="we_do_block">
+          <div class="icon"><i class="fa fa-puzzle-piece"></i></div>
+          <strong>Requirements Gathering</strong>
+          <p>Functions of the system we are to conceive, design, implement & operate.</p>
+        </div>
+      </div>
+      <!-- we_do_block ends here -->
+      <!-- we_do_block starts here -->
+      <div class="col-md-4">
+        <div class="we_do_block">
+          <div class="icon"><i class="fa fa-list-alt"></i></div>
+          <strong>Test Plan & Test Cases</strong>
+          <p>Series of simple steps that has to be done to check a particular functionality.</p>
+        </div>
+      </div>
+      <!-- we_do_block ends here -->
+      <!-- we_do_block starts here -->
+      <div class="col-md-4">
+        <div class="we_do_block">
+          <div class="icon"><i class="fa fa-cogs"></i></div>
+          <strong>Resources & Tools</strong>
+          <p>We use different bug tracking tools to log all the defects raised by testers.</p>
+        </div>
+      </div>
+      <!-- we_do_block ends here -->
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  <div class="testing_process_image">
+    <img src="/static/site/images/test-1.png" />
+  </div>
+</div>
+<!-- how_we_do ends here -->
+<!-- other_qa_services starts here -->
+<div class="other_qa_services row marl">
+  <div class="container">
+    <span class="heading"><span>Other QA Services we provide</span></span>
+    <div class="need_testing_block">
+      <div class="row">
+        <ul>
+          <li>So, if you have questions about Salesforce products, services, implementation, getting started</li>
+          <li>You don’t learn everything in life by reading a manual.</li>
+          <li>Free Foreign exchange rates</li>
+          <li>The project was initiated by Andrew Paglinawan in 2008 using geometric shapes as a core foundation</li>
+        </ul>
+        <ul>
+          <li>You don’t learn everything in life by reading a manual.</li>
+          <li>Free Foreign exchange rates</li>
+          <li>The project was initiated by Andrew Paglinawan in 2008 using geometric shapes as a core foundation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- other_qa_services ends here -->
 <!-- projects_container starts here -->
-	<div class="projects_container row marl">
-
-		<span class="heading"><span>Our Projects</span></span>
-
-			<div class="row text-center">
-				<ul>
-					<li><img src="/static/site/images/bough_test.png" /></li>
-					<li><img src="/static/site/images/pmt_test.png" /></li>
-					<li><img src="/static/site/images/giftingnation_test.png" /></li>
-					<li><img src="/static/site/images/parent_orbit_test.png" /></li>
-					<li><img src="/static/site/images/hello_coupons_test.png" /></li>
-				</ul>
-		  </div>
-
-		</div>
-	<!-- projects_container ends here -->
-
-	<div class="open_source_projects row marl">
-  <div class="heading"><span>Open Source Contributions</span></div>
-  <!-- open_source_item starts here -->
-  <div class="logo_grid">
-    <div class="col-md-offset-1 col-md-10 col-md-offset-1 open_source">
-      <div class="row each_open_source">
-        <div class="col-md-3 col-sm-6 skill">
-          <div class="open_source_item">
-            <strong>Forex-python</strong> <a aria-label="Star MicroPyramid/forex-python on GitHub" class="github-button" data-count-api="/repos/MicroPyramid/forex-python#stargazers_count" data-count-aria-label="# stargazers on GitHub" data-count-href="/MicroPyramid/forex-python/stargazers" data-style="mega" href="https://github.com/MicroPyramid/forex-python" target="_blank">Star</a>
-            <p>Free Foreign exchange rates, Bitcoin price index and currency conversion with python and currency symbols, names.</p>
-            <!-- Place this tag where you want the button to render. -->
+<div class="projects_container row marl">
+  <span class="heading"><span>Our Projects</span></span>
+  <div class="row text-center">
+    <ul>
+      <li><img src="/static/site/images/bough_test.png" /></li>
+      <li><img src="/static/site/images/pmt_test.png" /></li>
+      <li><img src="/static/site/images/giftingnation_test.png" /></li>
+      <li><img src="/static/site/images/parent_orbit_test.png" /></li>
+      <li><img src="/static/site/images/hello_coupons_test.png" /></li>
+    </ul>
+  </div>
+</div>
+<!-- projects_container ends here -->
+<div class="open_source_projects  marl">
+  <div class="container">
+    <div class="heading"><span>Open Source Contributions</span></div>
+    <!-- open_source_item starts here -->
+    <div class="logo_grid">
+      <div class="open_source">
+        <div class=" each_open_source">
+          <div class="col-md-3 col-sm-6 skill">
+            <div class="open_source_item">
+              <strong>Forex-python</strong> <a aria-label="Star MicroPyramid/forex-python on GitHub" class="github-button" data-count-api="/repos/MicroPyramid/forex-python#stargazers_count" data-count-aria-label="# stargazers on GitHub" data-count-href="/MicroPyramid/forex-python/stargazers" data-style="mega" href="https://github.com/MicroPyramid/forex-python" target="_blank">Star</a>
+              <p>Free Foreign exchange rates, Bitcoin price index and currency conversion with python and currency symbols, names.</p>
+              <!-- Place this tag where you want the button to render. -->
+            </div>
           </div>
-        </div>
-        <!-- open_source_item ends here --><!-- open_source_item starts here -->
-        <div class="col-md-3 col-sm-6 skill">
-          <div class="open_source_item">
-            <strong>Microurl</strong><a aria-label="Star MicroPyramid/microurl on GitHub" class="github-button" data-count-api="/repos/MicroPyramid/microurl#stargazers_count" data-count-aria-label="# stargazers on GitHub" data-count-href="/MicroPyramid/microurl/stargazers" data-style="mega" href="https://github.com/MicroPyramid/microurl" target="_blank">Star</a>
-            <p>Use MicroURL to shorten your original URL. So, you can share any kind of long urls in a short format. Which can be simple to share with anyone. See the installation process and usage in our GitHub repository.</p>
-            <!-- Place this tag where you want the button to render. -->
+          <!-- open_source_item ends here --><!-- open_source_item starts here -->
+          <div class="col-md-3 col-sm-6 skill">
+            <div class="open_source_item">
+              <strong>Microurl</strong><a aria-label="Star MicroPyramid/microurl on GitHub" class="github-button" data-count-api="/repos/MicroPyramid/microurl#stargazers_count" data-count-aria-label="# stargazers on GitHub" data-count-href="/MicroPyramid/microurl/stargazers" data-style="mega" href="https://github.com/MicroPyramid/microurl" target="_blank">Star</a>
+              <p>Use MicroURL to shorten your original URL. So, you can share any kind of long urls in a short format. Which can be simple to share with anyone. See the installation process and usage in our GitHub repository.</p>
+              <!-- Place this tag where you want the button to render. -->
+            </div>
           </div>
-        </div>
-        <!-- open_source_item ends here --><!-- open_source_item starts here -->
-        <div class="col-md-3 col-sm-6 skill">
-          <div class="open_source_item">
-            <strong>Django Simple pagination</strong> <a aria-label="Star MicroPyramid/django-simple-pagination on GitHub" class="github-button" data-count-api="/repos/MicroPyramid/django-simple-pagination#stargazers_count" data-count-aria-label="# stargazers on GitHub" data-count-href="/MicroPyramid/django-simple-pagination/stargazers" data-style="mega" href="https://github.com/MicroPyramid/django-simple-pagination" target="_blank">Star</a>
-            <p>A simple django application provides simple Digg-style pagination. It is devoted to implementing web pagination in very few steps..</p>
-            <!-- Place this tag where you want the button to render. -->
+          <!-- open_source_item ends here --><!-- open_source_item starts here -->
+          <div class="col-md-3 col-sm-6 skill">
+            <div class="open_source_item">
+              <strong>Django Simple pagination</strong> <a aria-label="Star MicroPyramid/django-simple-pagination on GitHub" class="github-button" data-count-api="/repos/MicroPyramid/django-simple-pagination#stargazers_count" data-count-aria-label="# stargazers on GitHub" data-count-href="/MicroPyramid/django-simple-pagination/stargazers" data-style="mega" href="https://github.com/MicroPyramid/django-simple-pagination" target="_blank">Star</a>
+              <p>A simple django application provides simple Digg-style pagination. It is devoted to implementing web pagination in very few steps..</p>
+              <!-- Place this tag where you want the button to render. -->
+            </div>
           </div>
-        </div>
-        <!-- open_source_item ends here --><!-- open_source_item starts here -->
-        <div class="col-md-3 col-sm-6 skill">
-          <div class="open_source_item">
-            <strong>Django PayU</strong> <a aria-label="Star MicroPyramid/django-payu on GitHub" class="github-button" data-count-api="/repos/MicroPyramid/django-payu#stargazers_count" data-count-aria-label="# stargazers on GitHub" data-count-href="/MicroPyramid/django-payu/stargazers" data-style="mega" href="https://github.com/MicroPyramid/django-payu" target="_blank">Star</a>
-            <p>A simple payu payment gateway application in every few steps</p>
-            <!-- Place this tag where you want the button to render. -->
+          <!-- open_source_item ends here --><!-- open_source_item starts here -->
+          <div class="col-md-3 col-sm-6 skill">
+            <div class="open_source_item">
+              <strong>Django PayU</strong> <a aria-label="Star MicroPyramid/django-payu on GitHub" class="github-button" data-count-api="/repos/MicroPyramid/django-payu#stargazers_count" data-count-aria-label="# stargazers on GitHub" data-count-href="/MicroPyramid/django-payu/stargazers" data-style="mega" href="https://github.com/MicroPyramid/django-payu" target="_blank">Star</a>
+              <p>A simple payu payment gateway application in every few steps</p>
+              <!-- Place this tag where you want the button to render. -->
+            </div>
           </div>
         </div>
       </div>
@@ -246,156 +233,144 @@
   </div>
   <!-- open_source_item ends here -->
 </div>
-
-		<!-- helping_block starts here -->
-		<div class="helping_block row marl">
-			<span class="heading"><span>We are Helping Others to do same</span></span>
-			<div class="col-md-offset-1 col-md-10 col-md-offset-1">
-				<div class="row helping_container">
-					<div class="col-md-4">
-						<div class="helping_item text-center">
-							<img src="/static/site/images/github.png" width="43" /> &nbsp; Github
-						</div>
-					</div>
-					
-					<div class="col-md-4">
-						<div class="helping_item second text-center">
-							<img src="/static/site/images/meetup.png" /> Meetups
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="helping_item third text-center">
-							<img src="/static/site/images/dj_g.png" /> Hyderabad 
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	<!-- helping_block ends here -->
-	<!-- contact_container starts here -->
-	<div class="contact_container row marl">
-		<div class="col-md-offset-1 col-md-10 col-md-offset-1">
-			<div class="contact_block row marl">
-				<div class="col-md-7 col-xs-12">
-					<div class="contact_details">
-						<div class="detail"><i class="fa fa-phone"></i> 040 6599 6999</div>
-						<div class="detail"><i class="fa fa-envelope"></i> hello@micropyramid.com</div>
-						<div class="detail"><i class="fa fa-map-marker"></i> HIG499, 6th phase KPHB, 
-Hyderabad, India - 500072</div>
-<a href="#">Contact Us</a>
-					</div>
-
-				</div>
-
-				<div class="col-md-5 col-xs-12 col-sm-12">
-					<div class="contact_content">
-						<strong>Django Web Development</strong>
-						<p>Quicksand is a display sans serif with rounded terminals. The project was initiated by Andrew Paglinawan in 2008 using geometric shapes as a core foundation. It is designed for display purposes but kept legible enough to use in small sizes as well. In 2016, in collaboration with Andrew, it was thoroughly revised by Thomas Jockin to improve the quality.
-						</p>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- contact_container ends here -->
-	<!-- recent_blogs starts here -->
-	<div class="recent_blogs row">
-		<div class="col-md-offset-1 col-md-10 col-md-offset-1">
-			<span class="heading"><span>Recent Blogs</span></span>
-			<div id="carousel-example" class="carousel slide" data-ride="carousel">
-    <!-- Wrapper for slides -->
-    <div class="row">
-        <div class="col-xs-12">
-            <div class="carousel-inner">
-                <div class="item active">
-                    <div class="carousel-content">
-                        <div class="col-md-4 blog_item blog_item">
-                            <p>This is a twitter bootstrap carousel that only uses text. There are no images in the carousel slides.</p>
-                        </div>
-                        <div class="col-md-4 blog_item">
-                            <p>This is a twitter bootstrap carousel that only uses text. There are no images in the carousel slides.</p>
-                        </div>
-                        <div class="col-md-4 blog_item">
-                            <p>This is a twitter bootstrap carousel that only uses text. There are no images in the carousel slides.</p>
-                        </div>
-                    </div>
-                </div>
-                 <div class="item ">
-                    <div class="carousel-content">
-                        <div class="col-md-4 blog_item">
-                            <p>This is a twitter bootstrap carousel that only uses text. There are no images in the carousel slides.</p>
-                        </div>
-                        <div class="col-md-4 blog_item">
-                            <p>This is a twitter bootstrap carousel that only uses text. There are no images in the carousel slides.</p>
-                        </div>
-                        <div class="col-md-4 blog_item">
-                            <p>This is a twitter bootstrap carousel that only uses text. There are no images in the carousel slides.</p>
-                        </div>
-                    </div>
-                </div>
-                 <div class="item">
-                    <div class="carousel-content">
-                        <div class="col-md-4 blog_item">
-                            <p>This is a twitter bootstrap carousel that only uses text. There are no images in the carousel slides.</p>
-                        </div>
-                        <div class="col-md-4 blog_item">
-                            <p>This is a twitter bootstrap carousel that only uses text. There are no images in the carousel slides.</p>
-                        </div>
-                        <div class="col-md-4 blog_item">
-                            <p>This is a twitter bootstrap carousel that only uses text. There are no images in the carousel slides.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- helping_block starts here -->
+<div class="helping_block row marl">
+  <div class="container">
+    <span class="heading"><span>We are Helping Others to do same</span></span>
+    <div class="helping_container">
+      <div class="col-md-4">
+        <div class="helping_item text-center">
+          <img src="/static/site/images/github.png" width="43" /> &nbsp; Github
         </div>
+      </div>
+      <div class="col-md-4">
+        <div class="helping_item second text-center">
+          <img src="/static/site/images/meetup.png" /> Meetups
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="helping_item third text-center">
+          <img src="/static/site/images/dj_g.png" /> Hyderabad 
+        </div>
+      </div>
     </div>
-    <!-- Controls --> <a class="left carousel-control" href="#carousel-example" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
- <a class="right carousel-control" href="#carousel-example" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-
+  </div>
 </div>
-
-		</div>
-	</div>
-	<!-- recent_blogs ends here -->	
-
-
-
-
-
+<!-- helping_block ends here -->
+<!-- contact_container starts here -->
+<div class="contact_container row marl">
+  <div class="container">
+    <div class= "col-md-12">
+      <div class="contact_block">
+        <div class="col-md-7 col-xs-12">
+          <div class="contact_details">
+            <div class="detail"><i class="fa fa-phone"></i> 040 6599 6999</div>
+            <div class="detail"><i class="fa fa-envelope"></i> hello@micropyramid.com</div>
+            <div class="detail"><i class="fa fa-map-marker"></i> HIG499, 6th phase KPHB, 
+              Hyderabad, India - 500072
+            </div>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+        <div class="col-md-5 col-xs-12 col-sm-12">
+          <div class="contact_content">
+            <strong>Django Web Development</strong>
+            <p>Quicksand is a display sans serif with rounded terminals. The project was initiated by Andrew Paglinawan in 2008 using geometric shapes as a core foundation. It is designed for display purposes but kept legible enough to use in small sizes as well. In 2016, in collaboration with Andrew, it was thoroughly revised by Thomas Jockin to improve the quality.
+            </p>
+          </div>
+        </div>
+        <br clear="all">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- contact_container ends here -->
+<!-- recent_blogs starts here -->
+<div class="recent_blogs row">
+  <div class="container">
+    <div class="col-md-12">
+      <span class="heading"><span>Recent Blogs</span></span>
+      <div id="carousel-example" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="carousel-content">
+                  <div class="col-md-4 blog_item blog_item">
+                    <p>This is a twitter bootstrap carousel that only uses text. There are no images in the carousel slides.</p>
+                  </div>
+                  <div class="col-md-4 blog_item">
+                    <p>This is a twitter bootstrap carousel that only uses text. There are no images in the carousel slides.</p>
+                  </div>
+                  <div class="col-md-4 blog_item">
+                    <p>This is a twitter bootstrap carousel that only uses text. There are no images in the carousel slides.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item ">
+                <div class="carousel-content">
+                  <div class="col-md-4 blog_item">
+                    <p>This is a twitter bootstrap carousel that only uses text. There are no images in the carousel slides.</p>
+                  </div>
+                  <div class="col-md-4 blog_item">
+                    <p>This is a twitter bootstrap carousel that only uses text. There are no images in the carousel slides.</p>
+                  </div>
+                  <div class="col-md-4 blog_item">
+                    <p>This is a twitter bootstrap carousel that only uses text. There are no images in the carousel slides.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="carousel-content">
+                  <div class="col-md-4 blog_item">
+                    <p>This is a twitter bootstrap carousel that only uses text. There are no images in the carousel slides.</p>
+                  </div>
+                  <div class="col-md-4 blog_item">
+                    <p>This is a twitter bootstrap carousel that only uses text. There are no images in the carousel slides.</p>
+                  </div>
+                  <div class="col-md-4 blog_item">
+                    <p>This is a twitter bootstrap carousel that only uses text. There are no images in the carousel slides.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Controls --> <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- recent_blogs ends here -->	
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-
 <script>
-	    setCarouselHeight('#carousel-example');
-
-    function setCarouselHeight(id)
-    {
-        var slideHeight = [];
-        $(id+' .item').each(function()
-        {
-            // add all slide heights to an array
-            slideHeight.push($(this).height());
-        });
-
-        // find the tallest item
-        max = Math.max.apply(null, slideHeight);
-
-        // set the slide's height
-        $(id+' .carousel-content').each(function()
-        {
-            $(this).css('height',max+'px');
-        });
-    }
+  setCarouselHeight('#carousel-example');
+  
+  function setCarouselHeight(id)
+  {
+     var slideHeight = [];
+     $(id+' .item').each(function()
+     {
+         // add all slide heights to an array
+         slideHeight.push($(this).height());
+     });
+  
+     // find the tallest item
+     max = Math.max.apply(null, slideHeight);
+  
+     // set the slide's height
+     $(id+' .carousel-content').each(function()
+     {
+         $(this).css('height',max+'px');
+     });
+  }
 </script>
-
-
 </div>
 {% endblock %}
