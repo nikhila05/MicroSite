@@ -5893,11 +5893,38 @@ p a{
     }
   }
   &.mongo_service_quality{
+     .heading{
+      display: block;
+      margin-bottom: 20PX;
+       span{
+          font-weight: 400;
+          font-size: 24px;
+          display: inline-block;
+          position: relative;
+          padding-bottom: 20px;
+          @media(min-width: $mob_min) and (max-width: $mob_max){
+            font-size:18px;
+            font-weight: 500;
+          }
+           &:after{
+            content:"";
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            background: #1dabdd;
+            left: 0;
+            bottom: 0;
+          }
+        }
+      }
     .service_quality{
-      min-height: 370px;
+      min-height: 300px;
       padding:20px;
       border: 5px solid #f1f1f1;
       margin-bottom: 20px;
+       @media(min-width: 1400px) and (max-width: 2000px){
+        min-height:350px;
+      }
       @media(min-width: $tab_min) and (max-width: $tab_max){
         min-height:350px;
       }
@@ -5909,8 +5936,93 @@ p a{
       }
     }
   }
+  &.why_to_choose{
+    background: #fafafa;
+    padding:40px 0;
+    margin-top: 0;
+    .heading{
+      display: block;
+      margin-bottom: 20PX;
+       span{
+          font-weight: 400;
+          font-size: 24px;
+          display: inline-block;
+          position: relative;
+          padding-bottom: 20px;
+          @media(min-width: $mob_min) and (max-width: $mob_max){
+            font-size:18px;
+            font-weight: 500;
+          }
+           &:after{
+            content:"";
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            background: #1dabdd;
+            left: 0;
+            bottom: 0;
+          }
+        }
+      }
+      .desc{
+        p{
+          font-size: 1rem;
+          line-height: 1.8rem;
+          font-weight: 400;
+          margin-top: 15px;
+          color: #333;
+        }
+      }
+  }
+
+  &.mp_seo{
+    .heading{
+      display: block;
+      margin-bottom: 20PX;
+       span{
+          font-weight: 400;
+          font-size: 24px;
+          display: inline-block;
+          position: relative;
+          padding-bottom: 20px;
+          @media(min-width: $mob_min) and (max-width: $mob_max){
+            font-size:18px;
+            font-weight: 500;
+          }
+           &:after{
+            content:"";
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            background: #1dabdd;
+            left: 0;
+            bottom: 0;
+          }
+        }
+      }
+      .desc{
+        p{
+          font-size: 1rem;
+          line-height: 1.8rem;
+          font-weight: 400;
+          margin-top: 15px;
+          color: #333;
+        }
+      }
+      .image{
+        margin-top:25px;
+      }
+    }
 }
 /* service_qualities ends here */
+.seo_banner{
+  margin-top: 65px;
+  .image{
+    img{
+      max-width: 100%;
+    }
+  }
+}
 /* need_testing_container starts here */
 .need_testing_container{
   /*background: url(/static/site/images/ques_pattern_1.png) repeat #e9f3f7;*/
@@ -6129,6 +6241,51 @@ p a{
       }
     }
   }
+  &.seo_benifits_block{
+    background: #1a8fb8;
+    .how_we_do_col{
+      .we_do_block{
+        position: relative;
+        color: #fff;
+        strong{
+          font-size: 1rem;
+          color: #fff;
+        }
+        .icon{
+          i{
+            background: #fff;
+            color: #1a8fb8;
+          }
+        }
+        p{
+          font-size: 0.8rem;
+          line-height: 1.2rem;
+        }
+        &::after{
+          position: absolute;
+          content: "\f105";
+          font-family: FontAwesome;
+          display: inline-block;
+          top: 100px;
+          left: 280px;
+          font-size: 100px;
+          color: #68c3e2;
+          @media(min-width: $mob_min) and (max-width: $smob_max){
+            display:none;
+          }
+           @media(min-width: $tab_min) and (max-width: $tab_max){
+            left:170px;
+          }
+        }
+        &.last{
+          &::after{
+            display:none;
+          }
+        }
+      }
+    }
+  }
+
 }
 /* how_we_do_container ends here */
 /* projects_container starts here */
@@ -6255,7 +6412,19 @@ p a{
       }
     }
   }
- 
+   &.pycon_services{
+    margin-top: 40px;
+     ul{
+      width: 31.5%;
+      li{
+        &:before{
+          background:none;
+          color: #2f5374;
+          content: "\f00c";
+        }
+      }
+     }
+   }
 }
 /* other_qa_services ends here */
 /* our_proud_work starts here */
@@ -7026,3 +7195,128 @@ p a{
   }
 }
 /* expertise_container ends here */
+/* seo_final_content starts here */
+.seo_final_content{
+  font-family: 'Quicksand', sans-serif;
+  margin:40px 0;
+  p{
+    font-size: 1rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    margin-top: 15px;
+    color: #333;
+  }
+}
+/* seo_final_content ends here */
+
+/* pycon_banner starts here */
+.pycon_banner{
+  background: url(/static/site/images/pycon-cityscape.png?dc2cd59f4c94) center #525252 no-repeat;
+  text-align: center;
+  margin-top: 65px;
+  height: 368px;
+  background-size: 100%;
+  filter: grayscale(100%);
+  font-family: 'Quicksand', sans-serif;
+  .desc{
+    margin-top: 75px;
+    color: #fff;
+    line-height: 2.5rem;
+    font-weight: 400;
+    font-size: 30px;
+  }
+  p{
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+    &.strong{
+      font-size: 2.5rem;
+      line-height: 4rem;
+    }
+    &.mail{
+      font-size: 1.5rem;
+    }
+  }
+}
+/* pycon_banner ends here */
+
+/* about_mp starts here */
+.about_mp{
+  margin-top: 30px;
+  font-family: 'Quicksand', sans-serif;
+  .content{
+    font-size: 1rem;
+    line-height: 1.9rem;
+    font-weight: 400;
+    margin-top: 15px;
+    color: #333;
+    text-align: justify;
+    .heading{
+    display: block;
+    margin-bottom: 20px;
+     span{
+      font-weight: 400;
+      font-size: 1.6rem;
+      display: inline-block;
+      position: relative;
+      padding-bottom: 20px;
+       &:after{
+        content:"";
+        position: absolute;
+        width: 60px;
+        height: 2px;
+        background: #1dabdd;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+  }
+  .logo{
+    padding-top:45px;
+    span{
+      width: 175px;
+      height: 175px;
+      background: #e1dada;
+      display: inline-block;
+      border-radius: 50%;
+      text-align: center;
+      padding-top: 60px;
+      img{
+        max-width: 70%;
+      }
+    }
+  }
+  &.pycon{
+    .content{
+      ul{
+        margin:0;
+        margin-top: 20px;
+        padding: 0;
+        li{
+          list-style: none;
+          &:before{
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            content: "\f192";
+            display: inline-block;
+            padding-right: 10px;
+            color: #1DABDD;
+          }
+        }
+      }
+    }
+    .logo{
+      display: block;
+      text-align: right;
+      span{
+        background: #b4d3c6;
+        padding-top: 45px;
+        img{
+          max-width: 85%;
+        }
+      }
+    }
+  }
+}
+/* about_mp ends here */
