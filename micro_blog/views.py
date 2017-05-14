@@ -35,7 +35,7 @@ from .tasks import *
 #     return render(request, 'admin/browse.html', {'files': imgs})
 
 def empty(request):
-    return render(request, 'site/pycon_index.html')
+    return render(request, 'site/mongo_service.html')
 
 
 @login_required

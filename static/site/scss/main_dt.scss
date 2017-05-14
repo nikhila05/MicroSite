@@ -5928,10 +5928,17 @@ p a{
       @media(min-width: $tab_min) and (max-width: $tab_max){
         min-height:350px;
       }
+       @media(min-width: $mob_min) and (max-width: $smob_max){
+          min-height:auto;
+          height:auto;
+       }
       .content{
         .icon{
           margin-bottom: 10px;
           display: block;
+          img{
+            width:45px;
+          }
         }
       }
     }
@@ -6011,6 +6018,9 @@ p a{
       }
       .image{
         margin-top:25px;
+        img{
+          max-width: 100%;
+        }
       }
     }
 }
@@ -6416,6 +6426,12 @@ p a{
     margin-top: 40px;
      ul{
       width: 31.5%;
+      @media(min-width: $mob_min) and (max-width: $smob_max){
+        width:100%;
+      }
+      @media(min-width: $tab_min) and (max-width: $tab_max){
+        width: 48%;
+      }
       li{
         &:before{
           background:none;
@@ -7224,6 +7240,9 @@ p a{
     line-height: 2.5rem;
     font-weight: 400;
     font-size: 30px;
+    @media(min-width: $mob_min) and (max-width: $smob_max){
+      margin-top: 40px;
+    }
   }
   p{
     margin-bottom: 5px;
@@ -7231,6 +7250,10 @@ p a{
     &.strong{
       font-size: 2.5rem;
       line-height: 4rem;
+       @media(min-width: $mob_min) and (max-width: $smob_max){
+         font-size:2rem;
+         line-height: 2.5rem;
+       }
     }
     &.mail{
       font-size: 1.5rem;
@@ -7309,6 +7332,9 @@ p a{
     .logo{
       display: block;
       text-align: right;
+       @media(min-width: $mob_min) and (max-width: $tab_max){
+         text-align:center;
+       }
       span{
         background: #b4d3c6;
         padding-top: 45px;
