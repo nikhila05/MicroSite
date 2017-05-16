@@ -1,159 +1,178 @@
-
 {% extends 'site/base.html' %}
 {% load i18n %}
-
 {% block title %}
-  {% trans '404' %} | {% trans 'Page not found' %} | {{ block.super }}
+{% trans '404' %} | {% trans 'Page not found' %} | {{ block.super }}
 {% endblock %}
-
 {% block stage %}
 <div id="container_wrapper">
-	<!-- service_banner starts here -->
-	<div class="service_banner row marl">
-		<div class="col-md-offset-2 col-md-8 col-md-offset-2">
-			<p>Develop a high performance web application with mongodb</p>
-			<div class="content">
-			<p>We have experience in building effective applications, handling massive data with mongodb. We design, develop the application the way you want, we also offer strategy and guidance in its optimal use for your situation.</p>
-      <p>We’ll provide 24*7 support to provide high performance, excellence towards the work. </p>
-			</div>
-		</div>
-	</div>	
-	<!-- service_banner ends here -->
-	
-	<!-- service_qualities starts here -->
-	<div class="service_qualities testing_service_quality mongo_service_quality row">
-		<div class="container">
-		<div class="row text-center"><span class="heading"><span>Why To Choose Us For MongoDB Development?</span></span></div>
-		<!-- service_quality starts here -->
-		<div class="col-md-4 col-sm-6">
-			<div class="service_quality">
-				<div class="content">
-					<div class="icon"><img src="/static/site/images/json-file.png" /></div>
-					<strong>Uses Bson Format</strong>
-					<p>BSON is a JSON-like storage format that mongodb uses when storing documents in collections(tables). It supports all types of data, also large binary objects.</p>
-				</div>
-			</div>
-		</div>
-		<!-- service_quality ends here -->
-			<!-- service_quality starts here -->
-		<div class="col-md-4 col-sm-6">
-			<div class="service_quality">
-				<div class="content">
-				<div class="icon"><img src="/static/site/images/analytics.png" /></div>
-				<strong>Ad Hoc Queries</strong> 
-					<p>We can do a field level quries, range level queries, expression related queries. Its also supports predefined functions to get the results from massive data.</p>
-				</div>
-			</div>
-		</div>
-		<!-- service_quality ends here -->
-			<!-- service_quality starts here -->
-		<div class="col-md-4 col-sm-6">
-			<div class="service_quality">
-				<div class="content">
-				  <div class="icon"><img src="/static/site/images/progress-report.png" /></div>
-					<strong>Scalability</strong>
-					<p>We can scale your database schema efficiently and inexpensively which increases performance of data processing.</p>
-				</div>
-			</div>
-		</div>
-		<!-- service_quality ends here -->
-		<!-- service_quality starts here -->
-		<div class="col-md-4 col-sm-6">
-			<div class="service_quality">
-				<div class="content">
-				 <div class="icon"><img src="/static/site/images/hierarchical-structure.png" /></div>
-					<strong>Sharding</strong>
-					<p>We can deploy your application data across multiple data centers as application grows rapidly. With load balancing, we can easily manage your application with massive data.</p>
-				</div>
-			</div>
-		</div>
-		<!-- service_quality ends here -->
-			<!-- service_quality starts here -->
-		<div class="col-md-4 col-sm-6">
-			<div class="service_quality">
-				<div class="content">
-				 <div class="icon"><img src="/static/site/images/index-folder.png" /></div>
-				<strong>Indexing</strong> 
-					<p>Any field in a mongodb document can be indexed.We can easily perform complex queries by making indexes on json data, can easily generate reports by gathering all types of data.</p>
-				</div>
-			</div>
-		</div>
-		<!-- service_quality ends here -->
-			<!-- service_quality starts here -->
-		<div class="col-md-4 col-sm-6">
-			<div class="service_quality">
-				<div class="content">
-					 <div class="icon"><img src="/static/site/images/mms.png" /></div>
-					<strong>MongoDB Management Service</strong>
-					<p>A powerful web tool that allows us tracking our databases and our machines and also backing up our data. It provides custom alerts which helps to discover issues before your MongoDB instance will be affected.</p>
-				</div>
-			</div>
-		</div>
-		<!-- service_quality ends here -->
-		</div>
-		</div>
+  <!-- service_banner starts here -->
+  <div class="service_banner django_service_banner row marl">
+    <div class="container">
+    <div class="col-md-12">
+      <p>Django Ecommerce Development Services</p>
+      <div class="content">
+        <div class="col-md-4 col-sm-4 left"><p>We offer development of e-stores, coupon and shipping websites for a variety of product types, categories, including consumer goods, digital assets, downloadable products.</p></div>
+         <div class="col-md-4 col-sm-4 left"><p>We design & develop end-to-end e-commerce solutions / Ecommerce websites using Django Oscar which provides powerful promotional tools, easy product management, multi-lingual, multi-currency enablement, convenient order management, secure payment gateways, etc.</p></div>
+        <div class="col-md-4 col-sm-4 left"> <p>We help you to integrate the best payment gateway such as Paypal (Express, Payflow), Stripe, eSelectPlus(Moneris) and many more that will help you to manage and process all of your online transactions.</p></div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- srvice_banner ends here -->
+  
+  <!-- django_features strats here -->
+  <div class="row django_features">
+    <div class="container">
+    <div class="row"><span class="heading"><span>Django Ecommerce Features</span></span></div>
+      <div class="row">
+      <!-- feature_block starts here -->
+        <div class="col-md-4 col-sm-6">
+          <div class="feature_block">
+            <div class="feature_content_image">
+              <div class="feature_image">
+                <img src="/static/site/images/ec_search.png" />
+              </div>
+              <div class="desc_position">
+                 Giving the flexibility to search the products they are interested in. Using our well-designed dashboard you
+              </div>
+            </div>
+            <div class="feature_title">
+                Product Search
+              </div>
+          </div>
+        </div>
+      <!-- feature_block ends here -->
+       <!-- feature_block starts here -->
+        <div class="col-md-4 col-sm-6">
+          <div class="feature_block">
+            <div class="feature_content_image">
+              <div class="feature_image">
+                <img src="/static/site/images/ec_pd.png" />
+              </div>
+              <div class="desc_position">
+                 Giving the flexibility to search the products they are interested in. Using our well-designed dashboard you
+              </div>
+            </div>
+            <div class="feature_title">
+                Product Details 
+              </div>
+          </div>
+        </div>
+      <!-- feature_block ends here -->
+       <!-- feature_block starts here -->
+        <div class="col-md-4 col-sm-6">
+          <div class="feature_block">
+            <div class="feature_content_image">
+              <div class="feature_image">
+                <img src="/static/site/images/ec_filter.png" />
+              </div>
+              <div class="desc_position">
+                 Giving the flexibility to search the products they are interested in. Using our well-designed dashboard you
+              </div>
+            </div>
+            <div class="feature_title">
+                Product Filtering
+              </div>
+          </div>
+        </div>
+      <!-- feature_block ends here -->
+       <!-- feature_block starts here -->
+        <div class="col-md-4 col-sm-6">
+          <div class="feature_block">
+            <div class="feature_content_image">
+              <div class="feature_image">
+                <img src="/static/site/images/ec_pay.png" />
+              </div>
+              <div class="desc_position">
+                 Giving the flexibility to search the products they are interested in. Using our well-designed dashboard you
+              </div>
+            </div>
+            <div class="feature_title">
+                Multiple Payment Methods
+              </div>
+          </div>
+        </div>
+      <!-- feature_block ends here -->
+       <!-- feature_block starts here -->
+        <div class="col-md-4 col-sm-6">
+          <div class="feature_block">
+            <div class="feature_content_image">
+              <div class="feature_image">
+                <img src="/static/site/images/ec_dash.png" />
+              </div>
+              <div class="desc_position">
+                 Giving the flexibility to search the products they are interested in. Using our well-designed dashboard you
+              </div>
+            </div>
+            <div class="feature_title">
+                Managing Your Content 
+            </div>
+          </div>
+        </div>
+      <!-- feature_block ends here -->
+       <!-- feature_block starts here -->
+        <div class="col-md-4 col-sm-6">
+          <div class="feature_block">
+            <div class="feature_content_image">
+              <div class="feature_image">
+                <img src="/static/site/images/ec_pd_review.png" />
+              </div>
+              <div class="desc_position">
+                 Giving the flexibility to search the products they are interested in. Using our well-designed dashboard you
+              </div>
+            </div>
+            <div class="feature_title">
+                Product Reviews and Ratings
+              </div>
+          </div>
+        </div>
+      <!-- feature_block ends here -->
+      </div>
+    </div>
+  </div>
+  <!-- django_features ends here -->
 
-	</div>
-	<!-- service_qualities ends here -->	
-	
-	<!-- how_we_do starts here -->
-		<div class="how_we_do_container mongo_business_col row marl">
-			<div class="container">
-			<span class="heading"><span>Some Heading Content Comes here</span></span>
-				<div class="row how_we_do_col">
-					<!-- we_do_block starts here -->
-						<div class="col-md-3 col-sm-3">
-							<div class="we_do_block">
-								<div class="icon"><i class="fa fa-paint-brush"></i></div>
-								<strong>Design</strong>
-							</div>
-						</div>
-					<!-- we_do_block ends here -->
-					<!-- we_do_block starts here -->
-						<div class="col-md-3 col-sm-3">
-							<div class="we_do_block">
-								<div class="icon"><i class="fa fa-cogs"></i></div>
-								<strong>Development</strong>
-							</div>
-						</div>
-					<!-- we_do_block ends here -->
-					<!-- we_do_block starts here -->
-						<div class="col-md-3 col-sm-3">
-							<div class="we_do_block">
-								<div class="icon"><i class="fa fa-shield"></i></div>
-								<strong>Confidentiality & Security</strong>
-							</div>
-						</div>
-					<!-- we_do_block ends here -->
-					<!-- we_do_block starts here -->
-						<div class="col-md-3 col-sm-3">
-							<div class="we_do_block">
-								<div class="icon"><i class="fa fa-support"></i></div>
-								<strong>24*7 Support</strong>
-							</div>
-						</div>
-					<!-- we_do_block ends here -->
-				
-					
-				</div>
-			</div>
-	
-		</div>
-	<!-- how_we_do ends here -->
+
+
+<!-- need_testing_container starts here -->
+<div class="need_testing_container django_ecommerce_list row marl">
+  <div class="container need_testing_block ">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12 testing_left">
+        <ul>
+       <li> It can handle any product type. This includes downloadable products, subscriptions etc.</li>
+       <li> It provides an extensive catalogue support. In fact, this framework is used by websites that have over 20 million products.</li>
+       <li> Provides the option of multiple fulfilment partners for a single product.</li>
+       <li> Diverse range of merchandising blocks for promotion of products throughout your website.</li>
+       <li> It has a comprehensive dashboard that replaces the Django admin completely.</li>
+        <li>It provides support for complex products handling. This includes split payments orders, multi-batch shipping, and order status pipelines.</li>
+        </ul>
+        <ul>
+       <li> It can handle any product type. This includes downloadable products, subscriptions etc.</li>
+       <li> It provides an extensive catalogue support. In fact, this framework is used by websites that have over 20 million products.</li>
+       <li> Provides the option of multiple fulfilment partners for a single product.</li>
+       <li> Diverse range of merchandising blocks for promotion of products throughout your website.</li>
+       <li> It has a comprehensive dashboard that replaces the Django admin completely.</li>
+        <li>It provides support for complex products handling. This includes split payments orders, multi-batch shipping, and order status pipelines.</li>
+        </ul>
+      </div>
+      <!-- <div class="col-md-5 col-sm-8 col-xs-12 testing_right">
+        <img src="/static/site/images/ques_testing_1.png" />
+        </div> -->
+    </div>
+  </div>
+</div>
+<!-- need_testing_container ends here -->
 
 <!-- projects_container starts here -->
 <div class="projects_container row marl">
-  <div class="container">
-	  <span class="heading"><span>Our Projects</span></span>
-	  <div class="row text-center">
-	    <ul>
-	      <li><img src="/static/site/images/bough_test.png" /></li>
-	      <li><img src="/static/site/images/pmt_test.png" /></li>
-	      <li><img src="/static/site/images/giftingnation_test.png" /></li>
-	      <li><img src="/static/site/images/parent_orbit_test.png" /></li>
-	      <li><img src="/static/site/images/hello_coupons_test.png" /></li>
-	    </ul>
-	  </div>
+  <span class="heading"><span>Our Projects</span></span>
+  <div class="row text-center">
+    <ul>
+      <li><img src="/static/site/images/crim.png" /></li>
+      <li><img src="/static/site/images/pmt_test.png" /></li>
+      <li><img src="/static/site/images/99.png" /></li>
+    </ul>
   </div>
 </div>
 <!-- projects_container ends here -->
@@ -243,7 +262,7 @@
         <div class="col-md-5 col-xs-12 col-sm-12">
           <div class="contact_content">
             <strong>Django Web Development</strong>
-            <p>We at Micropyramid follow a dynamic approach and make sure that we deliver top-notch MongoDB applications to our customers. With Mongodb, we can deliver applications with massive data in minimum time and minimum effort, can scale easily our database with no downtime as the application grows rapidly.
+            <p>Quicksand is a display sans serif with rounded terminals. The project was initiated by Andrew Paglinawan in 2008 using geometric shapes as a core foundation. It is designed for display purposes but kept legible enough to use in small sizes as well. In 2016, in collaboration with Andrew, it was thoroughly revised by Thomas Jockin to improve the quality.
             </p>
           </div>
         </div>
@@ -315,38 +334,30 @@
     </div>
   </div>
 </div>
-<!-- recent_blogs ends here -->	
-
-
-
-
+<!-- recent_blogs ends here --> 
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-
 <script>
-	    setCarouselHeight('#carousel-example');
-
-    function setCarouselHeight(id)
-    {
-        var slideHeight = [];
-        $(id+' .item').each(function()
-        {
-            // add all slide heights to an array
-            slideHeight.push($(this).height());
-        });
-
-        // find the tallest item
-        max = Math.max.apply(null, slideHeight);
-
-        // set the slide's height
-        $(id+' .carousel-content').each(function()
-        {
-            $(this).css('height',max+'px');
-        });
-    }
+  setCarouselHeight('#carousel-example');
+  
+  function setCarouselHeight(id)
+  {
+     var slideHeight = [];
+     $(id+' .item').each(function()
+     {
+         // add all slide heights to an array
+         slideHeight.push($(this).height());
+     });
+  
+     // find the tallest item
+     max = Math.max.apply(null, slideHeight);
+  
+     // set the slide's height
+     $(id+' .carousel-content').each(function()
+     {
+         $(this).css('height',max+'px');
+     });
+  }
 </script>
-
-
 </div>
 {% endblock %}

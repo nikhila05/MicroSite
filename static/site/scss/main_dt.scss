@@ -5794,6 +5794,39 @@ p a{
       }
     }
   }
+  &.aws_service_banner{
+    .right_content{
+      text-align: left;
+      font-weight: 400;
+      strong{
+        font-weight: 500;
+        font-size: 1.2rem;
+        display: block;
+         line-height: 1.8rem;
+        margin-bottom: 12px;
+      }
+      p{
+        text-align: left;
+        font-size: 1rem;
+        line-height: 1.8rem;
+        font-weight: 400;
+        margin-top: 15px;
+        color: #333;
+      }
+    }
+    .left_content{
+      img{
+        max-width: 100%;
+      }
+    }
+  }
+  &.django_service_banner{
+    .content{
+      p{
+        text-align: left;
+      }
+    }
+  }
 }
 /* service_banner ends here */
 /* service_qualities starts here */
@@ -5938,6 +5971,49 @@ p a{
           display: block;
           img{
             width:45px;
+          }
+        }
+
+      }
+    }
+    &.react_tools_quality{
+      .service_quality{
+        text-align: center;
+        min-height: 240px;
+        @media(min-width: $mob_min) and (max-width: $tab_max){
+          min-height:auto;
+          margin-bottom: 50px;
+        }
+        position: relative;
+        .content{
+          .icon{
+            margin-bottom: 10px;
+            display: inline-block;
+            position: absolute;
+            top: -41px;
+            left: 42%;
+            width: 70px;
+            background: #fff;
+            height: 70px;
+            text-align: center;
+            border-radius: 50%;
+            border: 4px solid #f1f1f1;
+            padding-top: 6px;
+            @media(min-width: $tab_min) and (max-width: $tab_max){
+              left:45%;
+            }
+            img{
+             
+            }
+          }
+          strong{
+          padding-bottom: 5px;
+           @media(min-width: $mob_min) and (max-width: $tab_max){
+              font-weight:500;
+           }
+            &:after{
+              background:none;
+            }
           }
         }
       }
@@ -6098,6 +6174,27 @@ p a{
       }
     }
   }
+  &.django_ecommerce_list{
+    padding-top:20px;
+    .need_testing_block{
+      .testing_left{
+         ul{
+          width: 45%;
+          margin-right: 3%;
+            @media(min-width: $mob_min) and (max-width: $tab_max){
+             width:100%;
+            }
+          li{
+            margin-top: 1.5rem;
+            list-style: none;
+            line-height: 1.6rem;
+            font-size: 0.9rem;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
 }
 /* need_testing_container ends here */
 /* service_advantages starts here */
@@ -6252,7 +6349,8 @@ p a{
     }
   }
   &.seo_benifits_block{
-    background: #1a8fb8;
+
+    background: #fb9700;
     .how_we_do_col{
       .we_do_block{
         position: relative;
@@ -6293,6 +6391,49 @@ p a{
           }
         }
       }
+    }
+    &.aws_benifits_block{
+      margin-top: 0;
+      .heading{
+        margin-top: 20px;
+        span{
+          color: #fff;
+          &:after{
+            content:"";
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            background: #fff;
+            left: 0;
+            bottom: 0;
+          }
+        }
+      }
+      .how_we_do_col{
+      .we_do_block{
+        .icon{
+        i{
+          display: inline-block;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          padding-top: 23px;
+          text-align: center;
+          color: #fb9700;
+          background: #fff;
+          font-size: 3.4rem;
+          transition: 0.5s ease-in-out all;
+          &:hover{
+            background : darken(#fb9700, 10%);
+            color: #fff;
+          }
+        }
+      }
+        &::after{
+          display:none;
+        }
+      }
+    }
     }
   }
 
@@ -7346,3 +7487,308 @@ p a{
   }
 }
 /* about_mp ends here */
+
+/* react_about_row starts here */
+.react_about_row{
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 80px;
+  .heading{
+    display: block;
+    margin-bottom: 20px;
+     span{
+      font-weight: 400;
+      font-size: 1.6rem;
+      display: inline-block;
+      position: relative;
+      padding-bottom: 20px;
+       &:after{
+        content:"";
+        position: absolute;
+        width: 60px;
+        height: 2px;
+        background: #1dabdd;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+   .tb_block{
+    @media(min-width: $mob_min) and (max-width: $smob_max){
+      text-align:center;
+    }
+    img{
+      max-width: 100%;
+    }
+   }
+  .desc{
+    padding-top: 5px;
+    @media(min-width: $tab_min) and (max-width: $tab_max){
+      padding-top: 0;   
+      text-align: left;
+    }
+     @media(min-width: $mob_min) and (max-width: $smob_max){
+        text-align: center;
+     }
+    strong{
+      font-weight: 400;
+      font-size: 1.5rem;
+      display: inline-block;
+      position: relative;
+      padding-bottom: 20px;
+      line-height: 2.3rem;
+    }
+    p{
+      font-size: 1rem;
+      line-height: 1.8rem;
+      font-weight: 400;
+      color: #333;
+    }
+  }
+  .react_row{
+    margin-top: 30px;
+
+    .left{
+      text-align: left;
+       @media(min-width: $mob_min) and (max-width: $smob_max){
+        text-align: center;
+     }
+     @media(min-width: $tab_min) and (max-width: $tab_max){
+       text-align:left;
+     }
+      &.tb_img{
+      @media(min-width: $tab_min) and (max-width: $tab_max){
+       text-align:center;
+     }
+     }
+    }
+    .right{
+      text-align: right;
+       @media(min-width: $mob_min) and (max-width: $smob_max){
+        text-align: center;
+     }
+     @media(min-width: $tab_min) and (max-width: $tab_max){
+       text-align:left;
+     }
+     &.tb_img{
+      @media(min-width: $tab_min) and (max-width: $tab_max){
+       text-align:center;
+     }
+     }
+    }
+
+  }
+ &.react_process{
+  margin-top:40px;
+  .heading{
+    margin-bottom: 0;
+  }
+ }
+}
+/* react_about_row ends here */
+
+/* our_react_works starts here */
+  .our_react_works{
+    font-family: 'Quicksand', sans-serif;
+    margin-top:30px;
+     .heading{
+    display: block;
+    margin-bottom: 20px;
+     span{
+      font-weight: 400;
+      font-size: 1.6rem;
+      display: inline-block;
+      position: relative;
+      padding-bottom: 20px;
+       &:after{
+        content:"";
+        position: absolute;
+        width: 60px;
+        height: 2px;
+        background: #1dabdd;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+  .works_container{
+    .image{
+      display: block;
+      text-align: center;
+    }
+    strong{
+      font-weight: 400;
+      font-size: 1.5rem;
+      display: inline-block;
+      position: relative;
+      padding-bottom: 20px;
+      line-height: 2.3rem;
+    }
+    p{
+      font-size: 1rem;
+      line-height: 1.8rem;
+      font-weight: 400;
+      color: #333;
+    }
+  }
+  }
+/* our_react_works ends here */
+
+/* docker_conatiner starts here */
+.docker_container{
+  margin-top: 80px;
+  font-family: 'Quicksand', sans-serif;
+  background: url(/static/site/images/waves.png) no-repeat bottom right;
+  background-size: 100%;
+  min-height: 600px;
+  padding-bottom: 175px;
+   @media(min-width: $tab_min) and (max-width: $tab_max){
+    background: url(/static/site/images/waves.png) no-repeat bottom right;
+    background-size: 100%;
+    padding-bottom: 100px;
+   }
+   @media(min-width: $mob_min) and (max-width: $smob_max){
+    background: url(/static/site/images/waves.png) no-repeat bottom right;
+    background-size: 100%;
+    padding-bottom: 50px;
+   }
+  .docker_conatiner_block{
+    .content{
+      strong{
+      font-weight: 400;
+      font-size: 1.5rem;
+      display: inline-block;
+      position: relative;
+      padding-bottom: 20px;
+      line-height: 2.3rem;
+      }
+      p{
+        font-size: 1rem;
+        line-height: 1.8rem;
+        font-weight: 400;
+        color: #333;
+      }
+      ul{
+        margin:0;
+        padding:0;
+        li{
+          list-style:none;
+          font-size: 1rem;
+          line-height: 1.8rem;
+          font-weight: 400;
+          color: #333;
+          margin-bottom: 7px;
+           &:before{
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            content: "\f192";
+            display: inline-block;
+            padding-right: 10px;
+            color: #1DABDD;
+          }
+        }
+      }
+    }
+  }
+}
+/* docker_conatiner ens here */
+
+/* django_features starts here */
+.django_features{
+ font-family: 'Quicksand', sans-serif;
+    margin-top:50px;
+     .heading{
+      display: block;
+      margin-bottom: 20px;
+      text-align: center;
+       span{
+        font-weight: 400;
+        font-size: 1.6rem;
+        display: inline-block;
+        position: relative;
+        padding-bottom: 20px;
+         &:after{
+          content:"";
+          position: absolute;
+          width: 60px;
+          height: 2px;
+          background: #1dabdd;
+          left: 0;
+          bottom: 0;
+      }
+    }
+  }
+  .feature_block{
+    margin-bottom: 30px;
+    .feature_content_image{
+      background: #e9ecf1;
+      position: relative;
+      text-align: center;
+      padding:10px;
+      .feature_image{
+
+      }
+      .desc_position{
+        display: none;
+        position: absolute;
+        top: 0;
+        left:0;
+        font-size: 1rem;
+        line-height: 1.6rem;
+        height: 100%;
+        text-align: left;
+        padding:20px;
+        font-weight: 400;
+      }
+      &:hover{
+        .desc_position{
+          display: block;
+          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d4d4db+0,e9ecf1+100 */
+background: rgb(212,212,219); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(212,212,219,0.8) 0%, rgba(233,236,241,0.8) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(212,212,219,0.8) 0%,rgba(233,236,241,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(212,212,219,0.8) 0%,rgba(233,236,241,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d4db', endColorstr='#e9ecf1',GradientType=0 ); /* IE6-9 */
+        }
+      }
+    }
+  }
+  .feature_title{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: 0.5px;
+    margin-top:5px;
+  }
+} 
+/* django_features ends here */
+
+/* aws_services starts here */
+.aws_services{
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 40px;
+  .aws_row{
+    .aws_item{
+      font-size: 0.9rem;
+      .logo{
+        float: left;
+        display: inline-block;
+        margin-right: 10px;
+        img{
+          width: 50px;
+        }
+      }
+      .desc{
+        p{
+          font-weight: 400;
+          margin-top: 6px;
+        }
+      }
+    }
+    &.row_2{
+      margin-top:35px;
+    }
+  }
+}
+/* aws_services ends here */
