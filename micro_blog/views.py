@@ -35,7 +35,7 @@ from .tasks import *
 #     return render(request, 'admin/browse.html', {'files': imgs})
 
 def empty(request):
-    return render(request, 'site/salesforce.html')
+    return render(request, 'site/aws.html')
 
 
 @login_required

@@ -6316,7 +6316,7 @@ p a{
 /* service_advantages starts here */
 .service_advantages{
     font-family: 'Quicksand', sans-serif;
-    margin-top: 70px;
+    margin-top: 35px;
     @media(min-width: $mob_min) and (max-width: $mob_max){
       margin-top:20px;
     }
@@ -6340,6 +6340,32 @@ p a{
           height: 2px;
           left: 0;
           bottom: 0;
+        }
+      }
+    }
+    .django_expert{
+      .heading{
+        text-align: left;
+      }
+      ul{
+        margin:0;
+        margin-top: 20px;
+        padding: 0;
+        li{
+          list-style: none;
+          font-size: 1rem;
+          line-height: 1.8rem;
+          font-weight: 400;
+          color: #333;
+          &:before{
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            content: "\f192";
+            display: inline-block;
+            padding-right: 10px;
+            color: #1DABDD;
+          }
         }
       }
     }
@@ -6521,6 +6547,7 @@ p a{
   }
   &.aws_benifits_block{
     margin-top: 0;
+    background: #fb9700;
     .heading{
       margin-top: 20px;
       span{
@@ -7928,15 +7955,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d4db', end
   .aws_row{
     .aws_item{
       font-size: 0.9rem;
-      .logo{
+      /*.logo{
         float: left;
         display: inline-block;
         margin-right: 10px;
         img{
           width: 50px;
         }
-      }
+      }*/
       .desc{
+        img{
+          float: left;
+          padding-bottom: 60px;
+          margin-right: 6px;
+        }
         p{
           font-weight: 400;
           margin-top: 6px;
