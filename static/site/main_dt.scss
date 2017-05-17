@@ -25,10 +25,11 @@ body{
   @extend #body;
 }
 #banner_wrap{
-  height: 380px;
+  height: 420px;
   width: 100%;
   margin-top: 30px;
   background-color: white;
+  /*background: url(../images/banners_web_dev/mp_banner_bg.jpg) cover;*/background-repeat: repeat-x;
   position: relative;
   @media (min-width: $mob_min) and (max-width: $smob_max){
     min-height: 400px;
@@ -721,7 +722,7 @@ body{
 .mp-technologies-heading{
   background:#fff;
   margin-top: 0px;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
   color: #748907;
   font-size: 30px;
 }
@@ -1636,9 +1637,6 @@ body{
       font-size: 210%;
       margin-bottom: 25px;
       color: #000000;
-      .pycon{
-          color: #31a3dd;
-      }
     }
 }
 /* about-us */
@@ -1711,6 +1709,7 @@ body{
   }
 }
 #container_wrapper{
+  padding-top: 40px;
   padding-bottom:0px;
   min-height:350px;
    @media (min-width: $mob_min) and (max-width:$smob_max){
@@ -4042,7 +4041,7 @@ body{
 .bread_crums{
   padding:25px 0px;
 
-  margin-top: 75px; 
+  margin-top: 60px; 
 
   padding-bottom: 0px;
   @media (min-width:$mob_min)and (max-width:$smob_max){
@@ -4073,10 +4072,31 @@ body{
         .name{
           height:16px;
           padding:5px 7px;
-          color:black;
+          background:#B7BABB;
+          color:#fff;
           font-size:15px;
           position:relative;
           padding-left:20px;
+          &:before{
+            content:'';
+            position:absolute;
+            left:-1px;
+            top:0px;
+            border-top: 14px solid transparent;
+            border-left: 13px solid #fff;
+            border-bottom: 14px solid transparent;
+            z-index:0;
+          }
+          &:after{
+            content:'';
+            position:absolute;
+            right:-13px;
+            top:0px;
+            border-top: 14px solid transparent;
+            border-left: 13px solid #B7BABB;
+            border-bottom: 14px solid transparent;
+            z-index:1;
+          }
         }
       }
     }
@@ -4824,7 +4844,6 @@ body{
 .testimonials_row {
       background:#333;
       padding: 30px 30px;
-       margin-bottom: 24px;
        @media (min-width: 240px) and (max-width: 768px){
         padding:15px 0;
        }
@@ -5630,92 +5649,92 @@ p a{
   }
 }
 /* country_list ends here */
-#main li{
-  line-height: 10px !important;
-}
-@media only screen and (max-width: 1024px) {
-  .breadcrumb {
-    display: none;
-  }
-}
-@media only screen and (min-width: 1025px) {
-  .breadcrumb {
-    margin-bottom: 110px;
-  }
-  .breadcrumb::before, .breadcrumb::after {
-    content: '';
-    display: table;
-  }
-  .breadcrumb::after {
-    clear: both;
-  }
-  .breadcrumb ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .breadcrumb ul li {
-    float: left;
-  }
-  .breadcrumb ul li a {
-    color: #fff;
-    font-size: .85em;
-    margin-right: 5px;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
-  }
-  .breadcrumb ul li a:hover, .breadcrumb ul li a:focus {
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  .breadcrumb ul li a:after {
-    content: "\00BB";
-    margin-left: 5px;
-    text-decoration: none !important;
-  }
-  .breadcrumb ul li:last-child a:after {
-    display: none;
-  }
-}
-@media only screen and (min-width: 1025px) {
-  .no-hero .breadcrumb, .short-header .breadcrumb {
-    margin-bottom: 130px;
-  }
-}
-@media only screen and (min-width: 1025px) {
-  .articles .breadcrumb ul li a {
-    color: white;
-  }
-  .articles .breadcrumb ul li:last-child a {
-    color: white;
-  }
-}
-.dark-text .breadcrumb ul li a {
-  color: #333;
-  text-shadow: none;
-}
-.bread_crums ul  li a, .bread_crums ul  li .a{
-    display:inline-block;
-  }
-  .bread_crums ul  li a span.name, .bread_crums ul  li .a span.name{
-    height:16px;
-    padding:5px 15px;
-    color:#4c4c4c;
-    font-size:17px;
-    position:relative;
-    padding-left:0px;
-    font-weight: 600;
-  }
-  .bread_crums ul  li a span.name:after, .bread_crums ul  li .a span.name:after{
-    content: "\00BB";
-    position:absolute;
-    right:0px;
-    top:4px;
-    display: inline-block;
-    color: #4c4c4c;
-    font-weight: 600;
-  }
-   .bread_crums ul  li:last-child a span.name:after{
-      display: none;
+#main li{   
+  line-height: 10px !important;   
+}   
+@media only screen and (max-width: 1024px) {    
+  .breadcrumb {   
+    display: none;    
+  }   
+}   
+@media only screen and (min-width: 1025px) {    
+  .breadcrumb {   
+    margin-bottom: 110px;   
+  }   
+  .breadcrumb::before, .breadcrumb::after {   
+    content: '';    
+    display: table;   
+  }   
+  .breadcrumb::after {    
+    clear: both;    
+  }   
+  .breadcrumb ul {    
+    list-style: none;   
+    padding: 0;   
+    margin: 0;    
+  }   
+  .breadcrumb ul li {   
+    float: left;    
+  }   
+  .breadcrumb ul li a {   
+    color: #fff;    
+    font-size: .85em;   
+    margin-right: 5px;    
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);   
+  }   
+  .breadcrumb ul li a:hover, .breadcrumb ul li a:focus {    
+    text-decoration: underline;   
+    cursor: pointer;    
+  }   
+  .breadcrumb ul li a:after {   
+    content: "\00BB";   
+    margin-left: 5px;   
+    text-decoration: none !important;   
+  }   
+  .breadcrumb ul li:last-child a:after {    
+    display: none;    
+  }   
+}   
+@media only screen and (min-width: 1025px) {    
+  .no-hero .breadcrumb, .short-header .breadcrumb {   
+    margin-bottom: 130px;   
+  }   
+}   
+@media only screen and (min-width: 1025px) {    
+  .articles .breadcrumb ul li a {   
+    color: white;   
+  }   
+  .articles .breadcrumb ul li:last-child a {    
+    color: white;   
+  }   
+}   
+.dark-text .breadcrumb ul li a {    
+  color: #333;    
+  text-shadow: none;    
+}   
+.bread_crums ul  li a, .bread_crums ul  li .a{    
+    display:inline-block;   
+  }   
+  .bread_crums ul  li a span.name, .bread_crums ul  li .a span.name{    
+    height:16px;    
+    padding:5px 15px;   
+    color:#4c4c4c;    
+    font-size:17px;   
+    position:relative;    
+    padding-left:0px;   
+    font-weight: 600;   
+  }   
+  .bread_crums ul  li a span.name:after, .bread_crums ul  li .a span.name:after{    
+    content: "\00BB";   
+    position:absolute;    
+    right:0px;    
+    top:4px;    
+    display: inline-block;    
+    color: #4c4c4c;   
+    font-weight: 600;   
+  }   
+   .bread_crums ul  li:last-child a span.name:after{    
+      display: none;    
    }
 /* service_banner starts here */
 .service_banner{
@@ -5808,9 +5827,6 @@ p a{
       }
     }
   }
-  &.sales_force_banner_content{
-    margin-top: 30px;
-  }
 }
 /* service_banner ends here */
 /* service_qualities starts here */
@@ -5833,31 +5849,6 @@ p a{
         color: #2f5374;
       }
     }
-    ul{
-      margin:0;
-      padding:0;
-      margin-top: 15px;
-      li{
-        list-style: none;
-        font-size: 1rem;
-        line-height: 2rem;
-        font-weight: 400;
-        margin: 15px 0;
-         &:before{
-          content: "\f124";
-          font-family: FontAwesome;
-          display: inline-block;
-          width: 27px;
-          height: 27px;
-          color: #ffffff;
-          border-radius: 50%;
-          line-height: 26px;
-          text-align: center;
-          background: #2f5374;
-          margin-right: 10px;
-        }
-      }
-    }
     strong{
       font-size: 1.8rem;
       color: #444;
@@ -5866,7 +5857,6 @@ p a{
       padding-bottom: 20px;
       display: block;
       position: relative;
-      line-height: 1.9rem;
       @media(min-width: $mob_min) and (max-width: $tab_max){
         font-size:18px;
       }
@@ -5875,6 +5865,7 @@ p a{
         position: absolute;
         width: 60px;
         height: 2px;
+        background: #1dabdd;
         left: 0;
         bottom: 0;
       }
@@ -5953,6 +5944,7 @@ p a{
             position: absolute;
             width: 60px;
             height: 2px;
+            background: #1dabdd;
             left: 0;
             bottom: 0;
           }
@@ -5961,7 +5953,7 @@ p a{
     .service_quality{
       min-height: 300px;
       padding:20px;
-      border: 7px solid #f1f1f1;
+      border: 5px solid #f1f1f1;
       margin-bottom: 20px;
        @media(min-width: 1400px) and (max-width: 2000px){
         min-height:350px;
@@ -5981,55 +5973,57 @@ p a{
             width:45px;
           }
         }
+
       }
     }
-  }
-  &.react_tools_quality{
-  .service_quality{
-    text-align: center;
-    min-height: 240px;
-    @media(min-width: $mob_min) and (max-width: $tab_max){
-      min-height:auto;
-      margin-bottom: 50px;
-    }
-    position: relative;
-    .content{
-      .icon{
-        margin-bottom: 10px;
-        display: inline-block;
-        position: absolute;
-        top: -41px;
-        left: 42%;
-        width: 70px;
-        background: #fff;
-        height: 70px;
+    &.react_tools_quality{
+      .service_quality{
         text-align: center;
-        border-radius: 50%;
-        border: 4px solid #f1f1f1;
-        padding-top: 6px;
-        @media(min-width: $tab_min) and (max-width: $tab_max){
-          left:45%;
+        min-height: 240px;
+        @media(min-width: $mob_min) and (max-width: $tab_max){
+          min-height:auto;
+          margin-bottom: 50px;
         }
-        img{
-        }
-      }
-      strong{
-      padding-bottom: 5px;
-       @media(min-width: $mob_min) and (max-width: $tab_max){
-          font-weight:500;
-       }
-        &:after{
-          background:none;
+        position: relative;
+        .content{
+          .icon{
+            margin-bottom: 10px;
+            display: inline-block;
+            position: absolute;
+            top: -41px;
+            left: 42%;
+            width: 70px;
+            background: #fff;
+            height: 70px;
+            text-align: center;
+            border-radius: 50%;
+            border: 4px solid #f1f1f1;
+            padding-top: 6px;
+            @media(min-width: $tab_min) and (max-width: $tab_max){
+              left:45%;
+            }
+            img{
+             
+            }
+          }
+          strong{
+          padding-bottom: 5px;
+           @media(min-width: $mob_min) and (max-width: $tab_max){
+              font-weight:500;
+           }
+            &:after{
+              background:none;
+            }
+          }
         }
       }
     }
-  }
-  }
-  &.django_rest_quality{    
-      .service_quality{   
-        min-height: 350px;    
-      }   
+     &.django_rest_quality{
+      .service_quality{
+        min-height: 350px;
+      }
     }
+  }
   &.why_to_choose{
     background: #fafafa;
     padding:40px 0;
@@ -6052,6 +6046,7 @@ p a{
             position: absolute;
             width: 60px;
             height: 2px;
+            background: #1dabdd;
             left: 0;
             bottom: 0;
           }
@@ -6087,6 +6082,7 @@ p a{
             position: absolute;
             width: 60px;
             height: 2px;
+            background: #1dabdd;
             left: 0;
             bottom: 0;
           }
@@ -6117,116 +6113,9 @@ p a{
       max-width: 100%;
     }
   }
-  &.react_js_banner{
-    margin-top: 105px;
-    background: #344555;
-    padding:30px 0;
-    .content{
-      color: #fff;
-      font-size: 3rem;
-      padding-top: 65px;
-      font-weight: 500;
-       @media(min-width: $mob_min) and (max-width: $tab_max){
-        padding-top: 10px;
-        text-align: center;
-        font-size: 1.7rem;
-       }
-    }
-  }
-  &.sales_force_banner{
-    font-family: 'Quicksand', sans-serif;
-    .banner_container{
-      background: url(/static/site/images/sales_banner.png) no-repeat ;
-      height:350px;
-      .banner_left{
-        padding-left: 30px;
-        padding-top: 125px;
-          @media(min-width: $mob_min) and (max-width: $tab_max){
-            padding-top:25px;
-            padding-left: 20px;
-            strong{
-              font-size: 1.5rem !important;
-              font-weight: 500 !important;
-              line-height: 1.6rem;
-            }
-          }
-           @media(min-width: $tab_min) and (max-width: $tab_max){
-             padding-top: 70px;
-           }
-        strong{
-          font-weight: 400;
-          font-size: 2.5rem;
-          display: inline-block;
-          position: relative;
-          padding-bottom: 20px;
-          color: #fff; 
-        }
-        p{
-          font-size: 1.3rem;
-          line-height: 1.8rem;
-          font-weight: 400;
-          margin-top: 7px;
-          color: #fff;  
-        }
-      }
-      .banner_right{
-        padding-top: 125px;
-        padding-left: 60px;
-         @media(min-width: $mob_min) and (max-width: $tab_max){
-            padding-top:10px;
-            padding-left: 20px;
-            strong{
-              font-size: 1.2rem !important;
-              font-weight: 500 !important;
-              line-height: 1.4rem;
-             
-            }
-          }
-        strong{
-          font-weight: 400;
-          font-size: 1.3rem;
-          line-height: 2rem;
-          display: inline-block;
-          position: relative;
-          padding-bottom: 20px;
-          color: #fff; 
-          &.strong{
-                font-weight: 600 !important;
-                text-align: center;
-                display: block;
-                font-size: 1.7rem !important;
-              }
-        }
-        p{
-          font-size: 1.2rem;
-          line-height: 1.8rem;
-          font-weight: 400;
-          margin-top: 2px;
-          color: #fff;  
-          text-align: center;
-        }
-        .btn_contact{
-          text-align: center;
-          a{
-            display: inline-block;
-            padding: 6px 15px;
-            background: #10536e;
-            color: #fff;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            padding-bottom: 8px;
-            letter-spacing: 0.5px;
-            font-weight: 500;
-            margin-top: 6px;
-        }
-        }
-      }
-    }
-  }
 }
 /* need_testing_container starts here */
 .need_testing_container{
-  font-family: 'Quicksand', sans-serif;
   /*background: url(/static/site/images/ques_pattern_1.png) repeat #e9f3f7;*/
   background: #e9f3f7;
   padding:60px 0;
@@ -6250,6 +6139,7 @@ p a{
             position: absolute;
             width: 60px;
             height: 2px;
+            background: #1dabdd;
             left: 0;
             bottom: 0;
           }
@@ -6310,7 +6200,6 @@ p a{
       }
     }
   }
-
 }
 /* need_testing_container ends here */
 /* service_advantages starts here */
@@ -6338,6 +6227,7 @@ p a{
           position: absolute;
           width: 60px;
           height: 2px;
+          background: #1dabdd;
           left: 0;
           bottom: 0;
         }
@@ -6398,26 +6288,15 @@ p a{
         position: absolute;
         width: 60px;
         height: 2px;
+        background: #1dabdd;
         left: 0;
         bottom: 0;
       }
     }
-
   }
-  p{
-    font-size: 18px;
-    font-weight: 400;
-    text-align: center;
-    line-height: 26px;
-    padding-top: 5px;
-    color: #444;
-    }
   .how_we_do_col{
     margin-top: 10px;
     text-align: center;
-    .each_row{
-      width: 20%;
-    }
     .we_do_block{
       padding:30px 20px;
       border-radius: 2px;
@@ -6475,7 +6354,8 @@ p a{
     }
   }
   &.seo_benifits_block{
-    background: #1a8fb8;
+
+    background: #fb9700;
     .how_we_do_col{
       .we_do_block{
         position: relative;
@@ -6493,7 +6373,6 @@ p a{
         p{
           font-size: 0.8rem;
           line-height: 1.2rem;
-          color: #eee;
         }
         &::after{
           position: absolute;
@@ -6518,71 +6397,51 @@ p a{
         }
       }
     }
-  }
-  &.aws_benifits_block{
-    margin-top: 0;
-    .heading{
-      margin-top: 20px;
-      span{
-        color: #fff;
-        &:after{
-          content:"";
-          position: absolute;
-          width: 60px;
-          height: 2px;
-          background: #fff;
-          left: 0;
-          bottom: 0;
-        }
-      }
-    }
-    .how_we_do_col{
-    .we_do_block{
-      .icon{
-      i{
-        display: inline-block;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        padding-top: 23px;
-        text-align: center;
-        color: #fb9700;
-        background: #fff;
-        font-size: 3.4rem;
-        transition: 0.5s ease-in-out all;
-        &:hover{
-          background : darken(#fb9700, 10%);
+    &.aws_benifits_block{
+      margin-top: 0;
+      .heading{
+        margin-top: 20px;
+        span{
           color: #fff;
-        }
-      }
-    }
-      &::after{
-        display:none;
-      }
-    }
-  }
-  }
-
-&.sales_how_we_do{
-  margin-top:30px;
-  .how_we_do_col{
-    .we_do_block{
-      padding-top:10px;
-      .icon{
-        i{
-          background: #2f5374;
-        }
-      }
-      &:hover{
-        .icon{
-          i{
-            background: darken(#2f5374, 10%);
+          &:after{
+            content:"";
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            background: #fff;
+            left: 0;
+            bottom: 0;
           }
         }
       }
+      .how_we_do_col{
+      .we_do_block{
+        .icon{
+        i{
+          display: inline-block;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          padding-top: 23px;
+          text-align: center;
+          color: #fb9700;
+          background: #fff;
+          font-size: 3.4rem;
+          transition: 0.5s ease-in-out all;
+          &:hover{
+            background : darken(#fb9700, 10%);
+            color: #fff;
+          }
+        }
+      }
+        &::after{
+          display:none;
+        }
+      }
+    }
     }
   }
-}
+
 }
 /* how_we_do_container ends here */
 /* projects_container starts here */
@@ -6610,6 +6469,7 @@ p a{
         position: absolute;
         width: 60px;
         height: 2px;
+        background: #1dabdd;
         left: 0;
         bottom: 0;
       }
@@ -6661,6 +6521,7 @@ p a{
         position: absolute;
         width: 60px;
         height: 2px;
+        background: #1dabdd;
         left: 0;
         bottom: 0;
       }
@@ -6710,7 +6571,7 @@ p a{
    &.pycon_services{
     margin-top: 40px;
      ul{
-      width: 38%;
+      width: 31.5%;
       @media(min-width: $mob_min) and (max-width: $smob_max){
         width:100%;
       }
@@ -6765,6 +6626,7 @@ p a{
             position: absolute;
             width: 60px;
             height: 2px;
+            background: #1dabdd;
             left: 0;
             bottom: 0;
           }
@@ -6852,6 +6714,7 @@ p a{
             position: absolute;
             width: 60px;
             height: 2px;
+            background: #1dabdd;
             left: 0;
             bottom: 0;
           }
@@ -6884,6 +6747,7 @@ p a{
   .contact_block{
       padding: 30px;
       background: url(/static/site/images/contact_person_1.png?eb824a871214) no-repeat top left #2f5374;
+     
     @media(min-width: $mob_min) and (max-width: $mob_max){
       background-position-y: 30px;
       background-image: none;
@@ -6979,6 +6843,7 @@ p a{
         position: absolute;
         width: 60px;
         height: 2px;
+        background: #1dabdd;
         left: 0;
         bottom: 0;
       }
@@ -7059,6 +6924,7 @@ p a{
         position: absolute;
         width: 60px;
         height: 2px;
+        background: #1dabdd;
         left: 0;
         bottom: 0;
       }
@@ -7196,6 +7062,7 @@ p a{
           position: absolute;
           width: 60px;
           height: 2px;
+          background: #1dabdd;
           left: 0;
           bottom: 0;
         }
@@ -7329,7 +7196,7 @@ p a{
             }
           }
           &.third{
-            left:10%;
+            left:15%;
             top:35%;
             @media(min-width: $tab_min) and (max-width: $tab_max){
               left:0;
@@ -7340,7 +7207,7 @@ p a{
             }
           }
           &.four{
-            right: -11%;
+            right: -5%;
             top:35%;
             @media(min-width: $tab_min) and (max-width: $tab_max){
               right:-2%;
@@ -7508,6 +7375,7 @@ p a{
 .pycon_banner{
   background: url(/static/site/images/pycon-cityscape.png?dc2cd59f4c94) center #525252 no-repeat;
   text-align: center;
+  margin-top: 65px;
   height: 368px;
   background-size: 100%;
   filter: grayscale(100%);
@@ -7565,6 +7433,7 @@ p a{
         position: absolute;
         width: 60px;
         height: 2px;
+        background: #1dabdd;
         left: 0;
         bottom: 0;
       }
@@ -7623,6 +7492,7 @@ p a{
   }
 }
 /* about_mp ends here */
+
 /* react_about_row starts here */
 .react_about_row{
   font-family: 'Quicksand', sans-serif;
@@ -7656,7 +7526,7 @@ p a{
     }
    }
   .desc{
-    padding-top: 0px;
+    padding-top: 5px;
     @media(min-width: $tab_min) and (max-width: $tab_max){
       padding-top: 0;   
       text-align: left;
@@ -7742,28 +7612,6 @@ p a{
         background: #1dabdd;
         left: 0;
         bottom: 0;
-      }
-    }
-  }
-  .technologies_block{
-    margin-top:35px;
-    strong{
-      font-weight: 400;
-      font-size: 1.4rem;
-      text-align: center;
-      display: block;
-      padding-bottom: 20px;
-    }
-    .techs{
-      margin-top: 10px;
-      text-align: center;
-      span{
-        font-size: 1rem;
-        font-weight: 400;
-        background: #eee;
-        border-radius: 20px;
-        padding:8px 20px;
-        margin:5px 5px;
       }
     }
   }
@@ -7949,83 +7797,3 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d4db', end
   }
 }
 /* aws_services ends here */
-/* react_c_qualities */
-.react_c_qualities{
-  .service_quality{
-    padding:10px 0;
-    min-height: 265px !important;
-    .content{
-      text-align: left;
-      strong{
-        text-align: left;
-        font-weight: 500;
-        padding:0px 0;
-      }
-      p{
-        text-align: left;
-      }
-    }
-  }
-}
-.react_points_heading{
-    font-size: 34px;
-    font-weight: 300;
-    line-height: 50px;
-    padding-top: 0px;
-    color: #444;
-}
-
-/* sales_tabs_row starts here */
-.sales_tabs_row{
-  margin-top: 30px;
-  background: #019edb;
-  padding-bottom: 40px;
-  font-family: 'Quicksand', sans-serif;
-  .sales_tabs{
-    ul{
-      text-align: center;
-      padding-bottom: 1px ;
-      border:none;
-      li{
-        display: inline-block;
-        float: none;
-        a{
-          border:none;
-          outline:none;
-          background: #4ec8f8;
-          font-size: 0.8rem;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-          color: #fff;
-          border-radius: 0;
-          @media(min-width: $mob_min) and (max-width: $mob_max){
-            font-size:0.6rem;
-          }
-          &:hover{
-            background:darken(#019edb, 10%);
-          }
-        }
-        &.active{
-          a{
-            background:darken(#019edb, 10%);
-            color: #fff;
-            outline:none;
-            border:none;
-          }
-        }
-      }
-    }
-    .tab-content{
-      margin-top: 20px;
-      p{
-        font-size: 16px;
-        font-weight: 400;
-        text-align: center;
-        line-height: 26px;
-        padding-top: 5px;
-        color: #fff;
-      }
-    }
-  }
-}
-/* sales_tabs_row ends here */

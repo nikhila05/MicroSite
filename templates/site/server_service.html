@@ -1,0 +1,158 @@
+
+{% extends 'site/base.html' %}
+{% load i18n %}
+
+{% block title %}
+  {% trans '404' %} | {% trans 'Page not found' %} | {{ block.super }}
+{% endblock %}
+
+{% block stage %}
+<div id="container_wrapper">
+	 <!-- service_banner starts here -->
+  <div class="service_banner row marl">
+    <div class="col-md-offset-2 col-md-8 col-md-offset-2">
+      <p>We build powerful Web applications with django. Let's Bring your Idea to Reality.</p>
+      <div class="content">
+      <p>Quicksand is a display sans serif with rounded terminals. The project was initiated by Andrew Paglinawan in 2008 using geometric shapes as a core foundation. It is designed for display purposes but kept legible enough to use in small sizes as well. In 2016, in collaboration with Andrew, it was thoroughly revised by Thomas Jockin to improve the quality.</p>
+      </div>
+    </div>
+  </div>  
+  <!-- srvice_banner ends here -->
+  
+  <!-- service_qualities starts here -->
+  <div class="row react_about_row react_process">
+<!--     <div class="row text-center"><span class="heading"><span>Our Process</span></span></div>
+ -->       <div class="container">
+          <div class="row react_row">
+           <div class="col-md-3 col-md-push-9 col-sm-4 col-xs-12 tb_block tb_img right">
+              <img src="/static/site/images/server_monit.png" />
+            </div>
+
+            <div class="col-md-9 col-md-pull-3 col-sm-8 col-xs-12 tb_block_b right">
+              <div class="desc">
+                <strong>Server Monitoring</strong>
+                <p>Use MicroURL to shorten your original URL. So, you can share any kind of long urls in a short format. Which can be simple to share with anyone. See the installation process and usage in our GitHub repository.
+                We can do a field level quries, range level queries, expression related queries. Its also supports predefined functions to get the results from massive data.
+                </p>
+              </div>
+            </div>
+
+           
+          
+          </div>
+
+          <div class="row react_row">
+           <div class="col-md-3 col-sm-4 col-xs-12 tb_block tb_img left">
+              <img src="/static/site/images/srever_updaterea.png" />
+            </div>
+            <div class="col-md-9 col-sm-8 col-xs-12 tb_block_b">
+              <div class="desc">
+                <strong>Server Update Software System</strong>
+                <p>Use MicroURL to shorten your original URL. So, you can share any kind of long urls in a short format. Which can be simple to share with anyone. See the installation process and usage in our GitHub repository.
+                We can do a field level quries, range level queries, expression related queries. Its also supports predefined functions to get the results from massive data.
+                </p>
+              </div>
+            </div>
+          
+          </div>
+
+          <div class="row react_row">
+             <div class="col-md-3  col-md-push-9 col-sm-4 col-xs-12 tb_block tb_img right">
+              <img src="/static/site/images/server_backup.png" />
+            </div>
+            <div class="col-md-9  col-md-pull-3 col-sm-8 col-xs-12 tb_block_b right">
+              <div class="desc">
+                <strong>Server Backup</strong>
+                <p>Use MicroURL to shorten your original URL. So, you can share any kind of long urls in a short format. Which can be simple to share with anyone. See the installation process and usage in our GitHub repository.
+                We can do a field level quries, range level queries, expression related queries. Its also supports predefined functions to get the results from massive data.
+                </p>
+              </div>
+            </div>
+
+           
+          
+          </div>
+           <div class="row react_row">
+           <div class="col-md-3 col-sm-4 col-xs-12 tb_block tb_img left">
+              <img src="/static/site/images/server_firewall.png" />
+            </div>
+            <div class="col-md-9 col-sm-8 col-xs-12 tb_block_b">
+              <div class="desc">
+                <strong>Firewall Protection</strong>
+                <p>Use MicroURL to shorten your original URL. So, you can share any kind of long urls in a short format. Which can be simple to share with anyone. See the installation process and usage in our GitHub repository.
+                We can do a field level quries, range level queries, expression related queries. Its also supports predefined functions to get the results from massive data.
+                </p>
+              </div>
+            </div>
+          
+          </div>
+       </div>
+    </div>
+  </div>
+  <!-- service_qualities ends here -->  
+  
+
+
+<!-- contact_container starts here -->
+<div class="contact_container row marl">
+  <div class="container">
+    <div class= "col-md-12">
+      <div class="contact_block">
+        <div class="col-md-7 col-xs-12">
+          <div class="contact_details">
+            <div class="detail"><i class="fa fa-phone"></i> 040 6599 6999</div>
+            <div class="detail"><i class="fa fa-envelope"></i> hello@micropyramid.com</div>
+            <div class="detail"><i class="fa fa-map-marker"></i> HIG499, 6th phase KPHB, 
+              Hyderabad, India - 500072
+            </div>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+        <div class="col-md-5 col-xs-12 col-sm-12">
+          <div class="contact_content">
+            <strong>Django Web Development</strong>
+            <p>We at Micropyramid follow a dynamic approach and make sure that we deliver top-notch MongoDB applications to our customers. With Mongodb, we can deliver applications with massive data in minimum time and minimum effort, can scale easily our database with no downtime as the application grows rapidly.
+            </p>
+          </div>
+        </div>
+        <br clear="all">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- contact_container ends here -->
+
+
+
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+<script>
+	    setCarouselHeight('#carousel-example');
+
+    function setCarouselHeight(id)
+    {
+        var slideHeight = [];
+        $(id+' .item').each(function()
+        {
+            // add all slide heights to an array
+            slideHeight.push($(this).height());
+        });
+
+        // find the tallest item
+        max = Math.max.apply(null, slideHeight);
+
+        // set the slide's height
+        $(id+' .carousel-content').each(function()
+        {
+            $(this).css('height',max+'px');
+        });
+    }
+</script>
+
+
+</div>
+{% endblock %}
+.
