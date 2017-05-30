@@ -1,0 +1,138 @@
+
+{% extends 'site/base.html' %}
+{% load i18n %}
+
+{% block title %}
+  {% trans '404' %} | {% trans 'Page not found' %} | {{ block.super }}
+{% endblock %}
+
+{% block stage %}
+<div id="container_wrapper">
+	 
+  <!-- -->
+  <div class="row ansible_container">
+    <div class="container">
+      <div class="row ansible_conatiner_block">
+        <div class="col-md-6 col-sm-10">
+           <div class="desc_top">
+             
+
+               <strong>Configuration Management System:</strong>
+              <p>Configuration Management System ensures a consistent, secure and reliable way to manage the system state, due to ever growing technological complexity, configuration management tools provide a simple yet effective platform to manage these complex systems. CM increases stability, efficiency and control over the system.</p>
+              <p>Just like we test our apps, backup the state regularly, version controlled, it’s very crucial to consider the same approach with the systems, neglecting would lead to huge risks, delayed deployments,  and huge costs.</p>
+               <strong>Ansible: </strong>
+              <p>Ansible tries to be simple and is built on existing concepts and which are widely known, hence it has relatively low learning curve compared to other popular CM tools.</p>
+              <p>JAnsible doesn’t require any software agent to be installed on target machines, only requirement is to have access to the target system, hence no need to upgrade management agents, not to worry about patching security vulnerabilities in those agents.</p>
+              <p>Ansible has feature called dry run, which basically means to preview the changes that will happen when the script gets executed, accidental modifications will be minimized.</p>
+              <p>Ansible core distribution has over 700 modules and over 4,000 community-provided roles which are easy to read and easy to run immediately.</p>
+              <strong>Ansible Tower:</strong>
+              <p>Ansible Tower is a hub for all of automation tasks, a visual dashboard reporting:</p>
+              
+              <ul>
+                <li>Server deployments</li>
+                <li>Failures</li>
+                <li>Health</li>
+                <li>History of playbooks executed</li>
+               <li> Different layers of security and authorization</li>
+               <li> User management</li>
+                <li>Inventory management</li>
+              </ul>
+
+              <p>Tower helps to conceptualize the state of a machine in a more intuitive way. </p>
+              <p>It also can schedule jobs, notifies about state of the system. Tower provides a REST API and CLI to interact and extend as desired.</p>
+
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -->
+
+<!-- helping_block starts here -->
+<div class="helping_block row marl">
+  <div class="container">
+    <span class="heading"><span>We are Helping Others to do same</span></span>
+    <div class="helping_container">
+      <div class="col-md-4">
+        <div class="helping_item text-center">
+          <img src="/static/site/images/github.png" width="43" /> &nbsp; Github
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="helping_item second text-center">
+          <img src="/static/site/images/meetup.png" /> Meetups
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="helping_item third text-center">
+          <img src="/static/site/images/dj_g.png" /> Hyderabad 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- helping_block ends here -->  
+
+
+<!-- contact_container starts here -->
+<div class="contact_container row marl">
+  <div class="container">
+    <div class= "col-md-12">
+      <div class="contact_block">
+        <div class="col-md-7 col-xs-12">
+          <div class="contact_details">
+            <div class="detail"><i class="fa fa-phone"></i> 040 6599 6999</div>
+            <div class="detail"><i class="fa fa-envelope"></i> hello@micropyramid.com</div>
+            <div class="detail"><i class="fa fa-map-marker"></i> HIG499, 6th phase KPHB, 
+              Hyderabad, India - 500072
+            </div>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+        <div class="col-md-5 col-xs-12 col-sm-12">
+          <div class="contact_content">
+            <strong>Django Web Development</strong>
+            <p>We at Micropyramid follow a dynamic approach and make sure that we deliver top-notch MongoDB applications to our customers. With Mongodb, we can deliver applications with massive data in minimum time and minimum effort, can scale easily our database with no downtime as the application grows rapidly.
+            </p>
+          </div>
+        </div>
+        <br clear="all">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- contact_container ends here -->
+
+
+
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+<script>
+	    setCarouselHeight('#carousel-example');
+
+    function setCarouselHeight(id)
+    {
+        var slideHeight = [];
+        $(id+' .item').each(function()
+        {
+            // add all slide heights to an array
+            slideHeight.push($(this).height());
+        });
+
+        // find the tallest item
+        max = Math.max.apply(null, slideHeight);
+
+        // set the slide's height
+        $(id+' .carousel-content').each(function()
+        {
+            $(this).css('height',max+'px');
+        });
+    }
+</script>
+
+
+</div>
+{% endblock %}

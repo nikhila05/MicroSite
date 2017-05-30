@@ -27,7 +27,6 @@ body{
 #banner_wrap{
   height: 380px;
   width: 100%;
-  margin-top: 30px;
   background-color: white;
   position: relative;
   @media (min-width: $mob_min) and (max-width: $smob_max){
@@ -865,6 +864,7 @@ body{
 #our-contact{
   .contact-detail {
     margin-top: 0;
+    font-family: 'Quicksand', sans-serif;
     .contact-block {
       display: table-row;
       padding: 0;
@@ -4106,7 +4106,6 @@ body{
     padding-right: 15px;
   }
   img{
-    width: 238px;
     max-height: 100%;
     height: auto;
     vertical-align: top;
@@ -5205,6 +5204,8 @@ p a{
 
 .services-left-container{
   margin-bottom: 0px;
+  margin-top: 15px;
+
 }
 #doc-languages li {
     margin: 0 3px;
@@ -6034,6 +6035,9 @@ p a{
     background: #fafafa;
     padding:40px 0;
     margin-top: 0;
+    &.aws_why_to_choose{
+      background: none;
+    }
     .heading{
       display: block;
       margin-bottom: 20PX;
@@ -6117,13 +6121,16 @@ p a{
       max-width: 100%;
     }
   }
+  h1{
+    text-align: center;
+  }
   &.react_js_banner{
-    margin-top: 105px;
+    margin-top: 0px !important;
     background: #344555;
     padding:30px 0;
     .content{
       color: #fff;
-      font-size: 3rem;
+      font-size: 2.6rem;
       padding-top: 65px;
       font-weight: 500;
        @media(min-width: $mob_min) and (max-width: $tab_max){
@@ -6316,7 +6323,7 @@ p a{
 /* service_advantages starts here */
 .service_advantages{
     font-family: 'Quicksand', sans-serif;
-    margin-top: 35px;
+    margin-top: 70px;
     @media(min-width: $mob_min) and (max-width: $mob_max){
       margin-top:20px;
     }
@@ -6547,7 +6554,6 @@ p a{
   }
   &.aws_benifits_block{
     margin-top: 0;
-    background: #fb9700;
     .heading{
       margin-top: 20px;
       span{
@@ -6737,7 +6743,7 @@ p a{
    &.pycon_services{
     margin-top: 40px;
      ul{
-      width: 38%;
+      width: 32%;
       @media(min-width: $mob_min) and (max-width: $smob_max){
         width:100%;
       }
@@ -6976,6 +6982,12 @@ p a{
         display: block;
         margin:15px 0;
         color: #fff;   
+      }
+      h1{
+        color: #fff;
+        font-size: 1.1rem;
+        text-align: left;
+        font-weight: 800;
       }
       p{
         font-size: 0.9rem;
@@ -7536,6 +7548,7 @@ p a{
   background: url(/static/site/images/pycon-cityscape.png?dc2cd59f4c94) center #525252 no-repeat;
   text-align: center;
   height: 368px;
+  margin-top: 93px;
   background-size: 100%;
   filter: grayscale(100%);
   font-family: 'Quicksand', sans-serif;
@@ -7545,6 +7558,11 @@ p a{
     line-height: 2.5rem;
     font-weight: 400;
     font-size: 30px;
+    a{
+      &:hover{
+        color: #fff;
+      }
+    }
     @media(min-width: $mob_min) and (max-width: $smob_max){
       margin-top: 40px;
     }
@@ -7683,7 +7701,9 @@ p a{
     }
    }
   .desc{
-    padding-top: 0px;
+    padding-top: 5px;
+    font-size: 1.0rem;
+    line-height: 29px;
     @media(min-width: $tab_min) and (max-width: $tab_max){
       padding-top: 0;   
       text-align: left;
@@ -7705,6 +7725,25 @@ p a{
       font-weight: 400;
       color: #333;
     }
+        ul{
+        margin:0;
+        margin-bottom: 20px;
+        padding: 0;
+        li{
+          list-style: none;
+          &:before{
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            content: "\f192";
+            display: inline-block;
+            padding-right: 10px;
+            color: #1DABDD;
+
+          }
+        }
+      }
+
   }
   .react_row{
     margin-top: 30px;
@@ -7876,7 +7915,57 @@ p a{
   }
 }
 /* docker_conatiner ens here */
-
+/* ansible_container starts here */
+.ansible_container{
+  margin-top: 80px;
+  font-family: 'Quicksand', sans-serif;
+  .ansible_conatiner_block{
+    background: url(/static/site/images/d-hand.png) no-repeat top left;
+    background-size: 100%;
+    padding-top: 330px;
+      @media(min-width: $tab_min) and (max-width: $tab_max){
+        padding-top: 200px;
+      }
+      @media(min-width: $mob_min) and (max-width: $mob_max){
+        padding-top: 120px;
+      }
+    strong{
+      font-weight: 400;
+      font-size: 1.5rem;
+      display: inline-block;
+      position: relative;
+      padding-bottom: 20px;
+      line-height: 2.3rem;
+    }
+    p{
+      font-size: 1rem;
+      line-height: 1.8rem;
+      font-weight: 400;
+      color: #333;
+    }
+    ul{
+      margin:0;
+      padding:0;
+      li{
+        font-size: 1rem;
+        line-height: 1.8rem;
+        font-weight: 400;
+        color: #333;
+        list-style: none;
+        &:before{
+          font-family: FontAwesome;
+          font-weight: normal;
+          font-style: normal;
+          content: "\f192";
+          display: inline-block;
+          padding-right: 10px;
+          color: #1DABDD;
+        }
+      }
+    }
+  }
+}
+/* ansible_container ends heer */
 /* django_features starts here */
 .django_features{
  font-family: 'Quicksand', sans-serif;
@@ -7955,20 +8044,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d4db', end
   .aws_row{
     .aws_item{
       font-size: 0.9rem;
-      /*.logo{
+      .logo{
         float: left;
         display: inline-block;
         margin-right: 10px;
         img{
           width: 50px;
         }
-      }*/
+      }
       .desc{
-        img{
-          float: left;
-          padding-bottom: 60px;
-          margin-right: 6px;
-        }
         p{
           font-weight: 400;
           margin-top: 6px;
@@ -8061,3 +8145,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d4db', end
   }
 }
 /* sales_tabs_row ends here */
+.seo_tag{
+  color: #337ab7;
+}
