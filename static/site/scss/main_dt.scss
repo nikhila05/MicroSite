@@ -5776,6 +5776,9 @@ p a{
       }
     }
   }
+  &.thanks_banner{
+    margin-top: 130px;
+  }
   &.aws_service_banner{
     .right_content{
       text-align: left;
@@ -8147,4 +8150,89 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d4db', end
 /* sales_tabs_row ends here */
 .seo_tag{
   color: #337ab7;
+}
+
+/* about_mp starts here */
+.about_mp{
+  font-family: 'Quicksand', sans-serif;
+  strong{
+    font-weight: 400;
+    font-size: 1.6rem;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 20px;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      background: #1dabdd;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  p{
+    font-size: 1rem;
+    line-height: 1.9rem;
+    font-weight: 400;
+    margin-top: 15px;
+    color: #333;
+  }
+}
+/* about_mp ends here */
+.contact_blocks{
+  font-family: 'Quicksand', sans-serif;
+  margin-top:40px;
+   .heading{
+      text-align: center;
+      margin-bottom: 20px;
+      span{
+        font-weight: 400;
+        font-size: 1.6rem;
+        display: inline-block;
+        position: relative;
+        padding-bottom: 20px;
+        &::after{
+          content: "";
+          position: absolute;
+          width: 60px;
+          height: 2px;
+          background: #1dabdd;
+          left: 0;
+          bottom: 0;
+        }
+      }
+    } 
+  .contact_block{
+    padding: 20px;
+    border: 7px solid #f1f1f1;
+      min-height: 220px;
+
+    strong{
+    font-weight: 500;
+    font-size: 1rem;
+    display: inline-block;
+    position: relative;
+    }
+    p{
+      font-size: 0.9rem;
+      line-height: 1.9rem;
+      font-weight: 400;
+      margin-top: 15px;
+      color: #333;
+    }
+  }
+}
+.back_to_home{
+  font-family: 'Quicksand', sans-serif;
+  margin:35PX 0;
+  a{
+    background: #1dabdd;
+    display: inline-block;
+    color: #fff;
+    padding:10px 25px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 20px;
+  }
 }
