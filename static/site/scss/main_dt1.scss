@@ -8045,14 +8045,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d4db', end
   font-family: 'Quicksand', sans-serif;
   margin-top: 40px;
   .aws_row{
-    position: relative;
-    height: 280px;
-      @media(min-width: $mob_min) and (max-width: $tab_max){
-        position:static;
-      }
     .aws_item{
       font-size: 0.9rem;
-      padding:15px;
       .logo{
         float: left;
         display: inline-block;
@@ -8065,89 +8059,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d4db', end
         p{
           font-weight: 400;
           margin-top: 6px;
-          font-size: 13px;
-        }
-      }
-      &.aws_icon{
-        background: none !important;
-        padding:0;
-        img{
-          max-width: 100%;
-        }
-      }
-      &.aws_pos{
-        position: absolute;
-        left: 0;
-        width: 230px;
-        height: 230px;
-        background:#eee;
-        border-radius: 50%;
-        text-align: center;
-        padding-top: 30px;
-         @media(min-width: $mob_min) and (max-width: $tab_max){
-          position:static;
-          width:auto;
-          height:auto;
-          background: none;
-          padding:0;
-          margin-bottom: 25px;
-        }
-        .aws_img{
-          max-width: 100%;
-        }
-        .logo{
-          display: block;
-          float: none;
-          text-align: center;
-        }
-        &.two{
-          top:30px;
-          left:40px;
-        }
-        &.three{
-          left: 80px;
-          top: 50px;
-        }
-        &.four{
-          left: 115px;                     
-        }
-        &.five{
-          left: 155px;
-          top:30px;
         }
       }
     }
     &.row_2{
       margin-top:35px;
     }
-  
-  &.aws_row_2{
-    .aws_item{
-      &.five{
-        left: 50px;
-        top: -15px;
-      }
-      &.three{
-        top:20px;
-      }
-      &.two{
-        top: -10px;
-      }
-    }
-  }
-   &.aws_row_3{
-    .aws_item{
-      &.one{
-        top: -50px;
-      }
-      &.three{
-        top:-50px;
-      }
-      &.two{
-        top: -75px;
-      }
-    }
-  }
   }
 }
 /* aws_services ends here */
