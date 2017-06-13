@@ -35,7 +35,7 @@ from .tasks import *
 #     return render(request, 'admin/browse.html', {'files': imgs})
 
 def empty(request):
-    return render(request, 'site/aws.html')
+    return render(request, 'site/react_1_service.html')
 
 
 @login_required
