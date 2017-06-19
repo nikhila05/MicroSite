@@ -7842,14 +7842,27 @@ p a{
   margin-top: 30px;
   .lambda_content_left{
     .code_icon{
-      i{
-        background: #1dabdd;
-        display: inline-block;
-        text-align: center;
-        border-radius: 2px;
-        font-size: 40px;
-        color: #fff;
-        padding:25px;
+      display: table;
+      padding: 5px;
+      background: #1dabdd;
+      .i_icon{
+        width: 100px;
+        display: table-cell;
+        vertical-align: middle;
+        i{
+          background: darken(#1dabdd, 20%);
+          display: inline-block;
+          text-align: center;
+          border-radius: 2px;
+          font-size: 40px;
+          color: #fff;
+          padding:25px;
+        }
+      }
+      .icon_content{
+        display: table-cell;
+        vertical-align: top;
+        color: white;
       }
     }
     .content{
@@ -7880,8 +7893,8 @@ p a{
     }
   }
   .lambda_content_center{
-    font-size: 140px;
-    padding-top: 100px;
+    font-size: 80px;
+    padding-top: 10px;
     text-align: center;
      @media(min-width: $mob_min) and (max-width: $tab_max){
         padding:15px ;
