@@ -7824,9 +7824,143 @@ p a{
     margin-bottom: 0;
   }
  }
+ &.lambda_top_row{
+  margin-top:20px;
+  .tb_row{
+    .tb_block{
+      img{
+        max-width: 75%;
+      }
+    }
+  }
+ }
 }
 /* react_about_row ends here */
-
+/* lambda_container starts here */
+.lambda_container{
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 30px;
+  .lambda_content_left{
+    .code_icon{
+      i{
+        background: #1dabdd;
+        display: inline-block;
+        text-align: center;
+        border-radius: 2px;
+        font-size: 40px;
+        color: #fff;
+        padding:25px;
+      }
+    }
+    .content{
+      text-align: justify;
+      strong{
+        font-size: 18px;
+        margin:15px 0;
+        display: block;
+        font-weight: 500;
+      }
+      ul{
+        margin:0;
+        padding:0;
+        li{
+          list-style: none;
+          font-size: 15px;
+          font-weight:400;
+          margin-bottom:15px;
+          line-height: 23px;
+        }
+      }
+      p{
+        font-size: 15px;
+        font-weight:400;
+        margin-top:10px;
+        line-height: 23px;
+      }
+    }
+  }
+  .lambda_content_center{
+    font-size: 140px;
+    padding-top: 100px;
+    text-align: center;
+     @media(min-width: $mob_min) and (max-width: $tab_max){
+        padding:15px ;
+     }
+     i{
+      @media(min-width: $mob_min) and (max-width: $tab_max){
+       transform: rotate(90deg);
+      }
+     }
+  }
+  .lambda_content_right{
+    background:#d5dbe7;
+    padding:15px;
+    .icons_block{
+      ul{
+        margin:0;
+        padding: 0;
+        li{
+          list-style: none;
+          text-align: center;
+          display: inline-block;
+          margin:2px;
+          .block{
+            float: left;
+            background: #fff;
+            border-radius: 2px;
+            padding:15px 20px;
+            i{
+              font-size: 25px;
+            }
+            .name{
+              display: block;
+              font-size: 13px;
+              font-weight: 600;
+              margin-top: 10px;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+    .content{
+      text-align: justify;
+      strong{
+        font-size: 18px;
+        margin:15px 0;
+        display: block;
+        font-weight: 500;
+      }
+      ul{
+        margin:0;
+        padding:0;
+        li{
+          list-style: none;
+          font-size: 15px;
+          font-weight:400;
+          margin-bottom:15px;
+          line-height: 23px;
+           &:before{
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            content: "\f192";
+            display: inline-block;
+            padding-right: 10px;
+            color: #1DABDD;
+          }
+        }
+      }
+      p{
+        font-size: 15px;
+        font-weight:400;
+        margin-top:10px;
+        line-height: 23px;
+      }
+    }
+  }
+}
+/* lambda_container ends here */
 /* our_react_works starts here */
   .our_react_works{
     font-family: 'Quicksand', sans-serif;
