@@ -1782,9 +1782,11 @@ body{
       }
     }
     .author_position{
-      font-size: 14px;
+      font-size: 12px;
       margin-left: 10px;
-      margin-top: 15px;
+      color: #fff;
+      margin-top: 0;
+      font-weight: 600;
       letter-spacing: 0.2px;
     }
     /* blog description starts here */
@@ -1811,7 +1813,8 @@ body{
     .blog-social{
       margin:0px;
       padding:0px;
-      margin-left:70px;
+      margin-left:0px;
+      margin-top: 15px;
       text-align:left;
       left:0px;
       z-index: 99999;
@@ -1827,6 +1830,8 @@ body{
           padding:8px 0px;
           transition: 0.4s all ease-in-out;
           text-align:center;
+          font-size: 1rem;
+          border-radius: 3px;
           display:block;
           &.rss{
             background:$rss;
@@ -1910,6 +1915,7 @@ body{
     .related-post{
       margin-bottom:40px;
       font-size:14px;
+      margin-top: 20px;
       text-align:justify;
       padding:10px;
       border:1px solid $stroke_color;
@@ -2256,19 +2262,17 @@ body{
 /* subscribe */
 /* author */
 .author_details{
-  padding: 15px 20px;
-  background-color: #d4d4d4;
-  width: 80%;
-  height: 200px;
-  margin-left: 50px;
+  padding: 10px 0;
+  background-color: #4c4c4c;
+  width: 100%;
   text-align: left;
   margin-bottom: 25px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .avatar_profile{
     background-image: url('http://knowledge-commons.com/static/assets/images/avatar.png');
-    width: 150px;
-    height: 150px;
+    width: 60px;
+    height: 60px;
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -2277,8 +2281,6 @@ body{
 /* prev_next_blog */
 .prev_next_blog{
   padding: 10px 0px;
-  margin-right: 80px;
-  margin-left: 50px;
   //border-top: 1px solid $stroke_color;
   //border-bottom: 1px solid $stroke_color;
   .prev{
@@ -4305,8 +4307,11 @@ body{
   padding-bottom:10px;
   .author{
     padding:0;
+    font-family: 'Quicksand', sans-serif;
     .blog-det{
-      margin-top: 10px;
+      margin-top: 0px;
+      color: #fff;
+      margin-bottom: 0;
     }
   }
   
